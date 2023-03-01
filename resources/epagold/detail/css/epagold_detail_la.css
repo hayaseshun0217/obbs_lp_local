@@ -1,0 +1,945 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font: inherit;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* add */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,ol {
+  list-style:none;
+}
+
+
+/*----------------------------------------------------------
+  common
+----------------------------------------------------------*/
+* {
+  word-break: break-all;
+  box-sizing: border-box;
+  min-height:0;
+  min-width : 0;
+}
+
+html[lang="en-x-mtfrom-ja"] #content iframe {
+  display: none;
+}
+html,
+body,
+input,
+textarea,
+select {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+body {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #FFF;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+a *:hover {
+  opacity: 0.7;
+}
+
+a img {
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+a img {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+table {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
+th.tl,
+td.tl {
+  text-align: left !important;
+}
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/**** コンテンツ幅：750px ****/
+.epagold {
+  display: block;
+  position: relative;
+  width:750px;
+  margin: 0 auto;
+
+  -webkit-box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* float */
+.float_r {
+  float:right;
+}
+
+.float_l {
+  float:left;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+:placeholder-shown {
+    color: #ccc; }
+
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+::-webkit-input-placeholder {
+    color: #ccc; }
+
+/* Firefox 18- */
+:-moz-placeholder {
+    color: #ccc; opacity: 1; }
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    color: #ccc; opacity: 1; }
+
+/* IE 10+ */
+:-ms-input-placeholder {
+    color: #ccc; }
+
+/* ---------------------------
+ボタンを動かす
+ --------------------------- */
+@keyframes scaling {
+  from {
+    transform: scale(1) translateY(0); }
+  to {
+    transform: scale(1.07) translateY(-4px); }
+}
+@-moz-keyframes scaling /* Firefox */ {
+  from {
+    -moz-transform: scale(1) translateY(0); }
+  to {
+    -moz-transform: scale(1.07) translateY(-4px); }
+}
+@-webkit-keyframes scaling /* Safari and Chrome */ {
+  from {
+    -webkit-transform: scale(1) translateY(0); }
+  to {
+    -webkit-transform: scale(1.07) translateY(-4px); } }
+
+ .btn_move {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 2.5vw;
+  bottom: 0;
+  animation-name: scaling;
+  -moz-animation-name: scaling;
+  -webkit-animation-name: scaling;
+  animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+.epagold div#epa .btn_move {
+  bottom: 20px;
+}
+
+
+/********************************
+  flexbox 基本class
+  wrapやjustify-contentの指定は個別のcss classで追記する
+********************************/
+*.flexbox {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+/********************************
+pc:contents
+********************************/
+.epagold div#fv,
+.epagold div#epa,
+.epagold div#cv_01,
+.epagold div#users_voice,
+.epagold div#cv_subscription,
+.epagold div#cv_buy_single,
+.epagold div#cv_subscription_02,
+.epagold div#cv_buy_single_02,
+.epagold div#cv_tel_02 {
+    position: relative;
+}
+
+/* 電話をかけて注文するボタン */
+.epagold div#fv p.tel_btn01 {
+  text-align: center;
+  padding: 35px 10px 35px 20px;
+}
+
+/* 今すぐ実感するボタン */
+.epagold div#cv_01 p.btn_cv {
+  margin-top: -100px;
+  position: absolute;
+  right: 19px;
+  width: 90%;
+}
+
+/* USER’S VOICE ご愛飲者様に取材しました！*/
+.epagold div#users_voice .voice_outerbox {
+  padding: 0 20px;
+}
+
+.epagold div#users_voice .voice_outerbox .voice_box {
+  padding-bottom: 30px;
+}
+
+.round_style {
+  border-left: #00a498 5px solid;
+  border-right: #00a498 5px solid;
+  border-bottom: #00a498 5px solid;
+  border-radius: 0 0 16px 16px;
+}
+
+.both_sides_style {
+  border-left: #00a498 5px solid;
+  border-right: #00a498 5px solid;
+}
+
+/* ご愛飲者様に取材しました！ */
+.epagold div#users_voice {
+  padding-bottom: 60px;
+}
+
+.epagold div#users_voice .voice_box{
+  position: relative;
+}
+
+.epagold div#users_voice .voice_box .more_btn{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.epagold div#users_voice .voice_box .more_btn .more img{
+  cursor: pointer;
+}
+
+.epagold div#users_voice .voice_box .more_btn .close {
+  display: none;
+}
+
+.epagold div#users_voice .voice_box .more_btn .close img{
+  cursor: pointer;
+}
+
+.epagold div#users_voice .voice_box.is_show{
+  padding-top: 30px;
+  transition: all .6s;
+}
+
+.epagold div#users_voice .voice_box.is_show .more_btn .close{
+  text-align: center;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 710px;
+}
+
+
+/* cv お得な定期コース申し込みボタン 600、300 */
+.epagold div#cv_subscription .btn_subscription,
+.epagold div#cv_subscription_02 .btn_subscription {
+  position: absolute;
+  padding: 0 50px 0 60px;
+  bottom: 36px;
+  right: 1.2vw;
+  width: 100%;
+  top: 1vw;
+}
+
+/* cta タブ切り替え */
+
+#target-cta {
+  margin-top: -40px;
+  padding-top: 40px;
+}
+
+.cta_set {
+  max-width: 660px;
+  width: 100%;
+  margin: 100px auto 40px;
+}
+
+.cta_set .tabs {
+  margin-bottom: -10px;
+}
+
+.cta_set .tab {
+  position: relative;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: .3s;
+  opacity: .7;
+}
+
+.cta_set .tab:hover {
+  opacity: 1;
+}
+
+.cta_set .tab .tab_arrow {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 20px;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 20px;
+}
+
+.cta_set .tab .tab_ribbon {
+  position: absolute;
+  top: -40px;
+}
+
+.cta_set .tab.active {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+.cta_set .tab.active .tab_arrow {
+  display: block;
+}
+
+.cta_set .cta_box {
+  position: relative;
+  display: none;
+}
+
+.cta_set .cta_box.active {
+  display: block;
+}
+
+.cta_set .cta_buy_btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+
+.cta_set .cta_buy_btn-tsujo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 30px;
+}
+
+.cta_set .cta_buy_btn-tsujo300, .cta_set .cta_buy_btn-tsujo600 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta_set .cta_buy_btn-tsujo600 {
+  top: 43%;
+  bottom: auto;
+  left: 0;
+  right: 0;
+}
+
+.cta_set .cta_buy_btn-tsujo300 {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+
+
+
+/* cv 単品価格申し込みボタン 600*/
+.epagold div#cv_buy_single .btn_single {
+  position: absolute;
+  padding: 0 50px 0 60px;
+  bottom:48px;
+}
+
+/* cv 単品価格申し込みボタン 300*/
+.epagold div#cv_buy_single_02 .btn_single {
+  position: absolute;
+  padding: 0 50px 0 60px;
+  bottom:0;
+}
+
+/* cv 電話注文ボタン */
+.epagold div#cv_tel_02 .btn_cv_tel_02 {
+  position: absolute;
+  padding: 0 10px 0 20px;
+  bottom:128px;
+}
+
+/* Q&A */
+.epagold div#qa {
+  background: url(../detail/img/qa_bg.jpg);
+  padding-bottom: 60px;
+
+}
+
+.epagold div#qa .qa_box{
+  padding: 30px 30px 0;
+}
+
+.epagold div#qa .qa_box .qa_question {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Q&A：アコーディオン開くボタン */
+.epagold div#qa .qa_box .qa_question::after {
+  position: absolute;
+  right:36px;
+  top:calc(50% - 25px);
+  content:"";
+  display:inline-block;
+  width:50px;
+  height:50px;
+  background:url(../detail/img/qa_open.png) no-repeat;
+  background-size:contain;
+}
+
+/* Q&A：アコーディオン閉じるボタン */
+.epagold div#qa .qa_box .qa_question.open::after {
+  position: absolute;
+  right:36px;
+  top:calc(50% - 25px);
+  content:"";
+  display:inline-block;
+  width:50px;
+  height:50px;
+  background:url(../detail/img/qa_close.png) no-repeat;
+  background-size:contain;
+}
+
+.epagold div#qa .qa_box.qa_01{
+  padding-top:44px;
+}
+
+/* フッター上：インフォメーションリンク */
+.epagold div#info_list {
+  padding: 80px 20px 60px;
+}
+
+.epagold div#info_list .list_box .info_caption {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+/* info：アコーディオン開くボタン */
+.epagold div#info_list .list_box .info_caption::after {
+  position: absolute;
+  right:40px;
+  top:calc(50% - 25px);
+  content:"";
+  display:inline-block;
+  width:50px;
+  height:50px;
+  background:url(../detail/img/info_list_open.png) no-repeat;
+  background-size:contain;
+}
+
+/* info：アコーディオン閉じるボタン */
+.epagold div#info_list .list_box .info_caption.open::after {
+  position: absolute;
+  right:40px;
+  top:calc(50% - 25px);
+  content:"";
+  display:inline-block;
+  width:50px;
+  height:50px;
+  background:url(../detail/img/info_list_close.png) no-repeat;
+  background-size:contain;
+}
+
+
+/* 企業ロゴ */
+.epagold .under_logo {
+  padding-bottom: 27px;
+  text-align: center;
+}
+
+
+/* フッター */
+footer#footer {
+  text-align: center;
+}
+
+footer#footer .footer_logo {
+  padding-bottom: 27px;
+}
+
+/* フッターリンクボタンエリア */
+footer#footer .footer_link {
+  background-color: #0049b1;
+  padding: 60px 60px 40px;
+}
+
+footer#footer .footer_link .footer_link_btn {
+  margin-bottom: 20px;
+}
+
+footer#footer .footer_link .copyright {
+  font-size: 24px;
+  color: #fff;
+  padding-top: 14px;
+}
+/* ポップアップバナー */
+.popup {
+  position: fixed;
+  bottom: 2px;
+  right: 20px;
+  max-width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 10;
+}
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-close {
+  position: fixed;
+  bottom: 240px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.7);
+  cursor: pointer;
+  transition: .3s;
+}
+.popup-close:hover {
+  background-color: rgba(0,0,0,.4);
+}
+.popup-close::before, .popup-close::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  width: 14px;
+  height: 2px;
+  background-color: #fff;
+  font-weight: bold;
+}
+.popup-close::before {
+  transform: rotate(-45deg);
+}
+.popup-close::after {
+  transform: rotate(45deg);
+}
+
+
+/*------------ PC版に切り分け用 ------------ */
+
+.epagold.la {
+  width: 1000px;
+}
+.epagold.la img {
+  width: 100%;
+}
+
+
+/********************************
+sp:contents
+********************************/
+@media screen and ( max-width: 999px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .epagold.la {
+    width: 100%;
+  }
+  .epagold.la img {
+    width: 100%;
+}
+
+  /* 電話をかけて注文するボタン */
+  .epagold div#fv p.tel_btn01 {
+    text-align: center;
+    padding: 4.66vw 1.33vw 4.66vw 2.66vw;
+  }
+
+  /* 今すぐ実感するボタン */
+  .epagold div#epa p.btn_cv, .epagold div#cv_01 p.btn_cv {
+    margin-top: -9vw;
+    margin-bottom: 1.4vw;
+    width: 90%;
+    position: absolute;
+    right: 3.2vw;
+  }
+  .epagold div#cv_01 p.btn_cv {
+    margin-top: -9vw;
+  }
+  .epagold div#epa p.btn_cv {
+    margin-top: -5vw;
+  }
+
+  /* USER’S VOICE ご愛飲者様に取材しました！*/
+  .epagold div#users_voice .voice_outerbox {
+    padding: 0 2.66vw;
+  }
+
+  .epagold div#users_voice .voice_outerbox .voice_box {
+    padding-bottom: 2.66vw;
+  }
+
+  .round_style {
+    border-left: #00a498 0.66vw solid;
+    border-right: #00a498 0.66vw solid;
+    border-bottom: #00a498 0.66vw solid;
+    border-radius: 0 0 2.13vw 2.13vw;
+  }
+
+  .both_sides_style {
+    border-left: #00a498 0.66vw solid;
+    border-right: #00a498 0.66vw solid;
+  }
+
+  .epagold div#users_voice .voice_box .more_btn{
+    margin-top: 2.6vw;
+  }
+
+  .epagold div#users_voice .voice_box .more_btn .more img{
+    width: 29.6vw;
+  }
+
+  .epagold div#users_voice .voice_box .more_btn .close img{
+    width: 43.73vw;
+  }
+
+  .epagold div#users_voice .voice_box.is_show{
+    padding-top: 6vw;
+  }
+
+  .epagold div#users_voice .voice_box.is_show .more_btn .close{
+    width: 100%;
+    top: 1vw;
+  }
+
+  /* cta タブ切り替え */
+  .cta_set .cta_buy_btn-tsujo300 {
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+  .cta_set .tab .tab_ribbon {
+    position: absolute;
+    top: -6vw;
+  }
+
+  /* cv お得な定期コース申し込みボタン 600、300 */
+  .epagold div#cv_subscription .btn_subscription,
+  .epagold div#cv_subscription_02 .btn_subscription,
+  .epagold div#cv2_subscription .btn_subscription,
+  .epagold div#cv2_subscription_02 .btn_subscription {
+    width: 87%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 5vw;
+  }
+
+  /* cv お得な定期コース申し込みボタン 600、300 */
+  .epagold div#cv_subscription .btn_subscription,
+  .epagold div#cv_subscription_02 .btn_subscription {
+    width: 87%;
+    right: 5.2vw;
+    bottom: 5vw;
+  }
+
+  /* cv 単品価格申し込みボタン 600*/
+  .epagold div#cv_buy_single .btn_single {
+    position: absolute;
+    padding: 0 6.66vw 0 8vw;
+    bottom: 6.4vw;
+  }
+
+  /* cv 単品価格申し込みボタン 300*/
+  .epagold div#cv_buy_single_02 .btn_single {
+    position: absolute;
+    padding: 0 6.66vw 0 8vw;
+    bottom:0;
+  }
+
+  /* cv 電話注文ボタン */
+  .epagold div#cv_tel_02 .btn_cv_tel_02 {
+    position: absolute;
+    padding: 0 1.33vw 0 2.66vw;
+    bottom: 17.06vw;
+  }
+
+  /* Q&A */
+  .epagold div#qa {
+    background: url(../detail/img/qa_bg.jpg);
+    padding-bottom: 8vw;
+
+  }
+
+  .epagold div#qa .qa_box{
+    padding: 4vw 4vw 0;
+  }
+
+  /* Q&A：アコーディオン開くボタン */
+  .epagold div#qa .qa_box .qa_question::after {
+    right:4.8vw;
+    top:calc(50% - 3.33vw);
+    width: 6.66vw;
+    height: 6.66vw;
+  }
+
+  /* Q&A：アコーディオン閉じるボタン */
+  .epagold div#qa .qa_box .qa_question.open::after {
+    right:4.8vw;;
+    top:calc(50% - 3.33vw);
+    width: 6.66vw;
+    height: 6.66vw;
+  }
+
+
+  .epagold div#qa .qa_box.qa_01{
+    padding-top: 5.86vw;
+  }
+
+  /* フッター上：インフォメーションリンク */
+  .epagold div#info_list {
+    padding: 10.66vw 2.66vw 8vw;
+  }
+
+  .epagold div#info_list .list_box .info_caption {
+    margin-bottom: 5.33vw;
+  }
+
+  /* アコーディオン開くボタン */
+  .epagold div#info_list .list_box .info_caption::after {
+    right: 5.33vw;
+    top: calc(50% - 3.33vw);
+    width: 6.66vw;
+    height: 6.66vw;
+  }
+
+  /* アコーディオン閉じるボタン */
+  .epagold div#info_list .list_box .info_caption.open::after {
+    right: 5.33vw;
+    top: calc(50% - 3.33vw);
+    width: 6.66vw;
+    height: 6.66vw;
+  }
+
+  /* 企業ロゴ */
+  .epagold .under_logo {
+    padding-bottom: 3.6vw;
+  }
+
+  .epagold .under_logo img {
+    width: 60.8vw;
+  }
+
+    /* ポップアップバナー */
+  .popup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    opacity: 1;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 10;
+  }
+
+  .popup-close {
+    position: fixed;
+    bottom: 108px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.7);
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  /* フッターリンクボタンエリア */
+  footer#footer .footer_link {
+    padding: 8vw 8vw 5.33vw;
+  }
+
+  footer#footer .footer_link .copyright {
+    font-size: 3.2vw;
+    padding-top: 1.86vw;
+  }
+
+
+
+
+}

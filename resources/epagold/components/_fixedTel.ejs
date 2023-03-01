@@ -1,0 +1,21 @@
+<div id="fixed_tel" class="fixed_tel">
+  <div id="fixed_tel_close" class="fixed_tel_close">×</div>
+  <a href="tel:0120117502" class="fixed_tel__link pc ga__telbnr">
+    <img src="<%= productRootPath %>img/fixed_tel_pc.png" alt="">
+  </a>
+  <a href="tel:0120117502" class="ebis_button_trigger fixed_tel__link sp ga__telbnr" data-cid="2JbemGXQ" data-pid="clickcv_sp_epalp">
+    <img src="<%= productRootPath %>img/fixed_tel_sp.png" alt="">
+  </a>
+</div>
+
+<script type="text/javascript">
+{
+'use strict';
+const bnr = document.getElementById('fixed_tel');
+const closeBtn = document.getElementById('fixed_tel_close');
+
+closeBtn.addEventListener('click', () => {
+  bnr.classList.add('hidden');
+});
+}
+</script>

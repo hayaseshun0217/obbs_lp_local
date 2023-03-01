@@ -1,0 +1,1 @@
+$(window).load(function(){var o=location.hash,o=$(o).offset().top;return $("html,body").animate({scrollTop:o},"slow"),!1});

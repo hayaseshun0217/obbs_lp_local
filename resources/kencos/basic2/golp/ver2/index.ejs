@@ -1,0 +1,1045 @@
+<%
+  const commonRootPath = '../../../../common/';
+  const productRootPath = '../../';
+  const commonComponentPath = `${commonRootPath}components/`;
+  const productComponentPath = `${productRootPath}../components/`;
+  const ogpData = {
+    url: 'basic2/golp/ver2',
+    title: '',
+    description: '',
+    siteName: '',
+    image: ''
+  }
+%>
+<!DOCTYPE html><html>
+<%- include(`${productComponentPath}_head`, {commonRootPath, productRootPath, ogpData}) %>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="kencos">
+  <%- include(`${productComponentPath}_header`, {commonRootPath, productRootPath}) %>
+    <!-- /header -->
+  <!-- main -->
+  <main class="main">
+
+    <script type="text/javascript">
+    jQuery(function ($) {
+    $('.acordion').on('click', function () {
+      /*クリックでコンテンツを開閉*/
+      $(this).next().slideToggle(400);
+      $(this).toggleClass("active");
+    });
+
+    });
+    </script>
+      <section class="sec_photo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/mainImg01_2_pc.png"><!--/pc-->
+          <img src="<%= productRootPath %>img/mainImg01_2.png" alt=""><!--/sp-->
+        </picture>
+        <!-- お知らせ掲載 -->
+        <div class="photoInTextSet">
+          <%- include(`${commonComponentPath}_common_oshirase`, {commonRootPath, productRootPath}) %>
+        </div>
+        <!-- /お知らせ掲載 -->
+        <img src="<%= productRootPath %>img/bollet_pc.png">
+        <img src="<%= productRootPath %>img/img_arrow_tobollet_pc.png">
+
+        <div class="photoInTextSet">
+        <picture>
+          <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/healthmark_pc.png"><!--/pc-->
+          <img src="<%= productRootPath %>img/healthmark_sp.png" alt=""><!--/sp-->
+        </picture>
+      </div>
+
+        <h2>コンディショニングを重視する<br>すべてのアスリートに！</h2>
+        <div class="photoInTextSet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/mainImg02_pc.jpg"><!--/pc-->
+            <img src="<%= productRootPath %>img/mainImg02_sp.jpg" alt=""><!--/sp-->
+          </picture>
+        </div>
+        <div class="acordion"><span>詳しく見る</span></div>
+        <section class="sec_userVoice width1080" style="display: none;">
+          <div class="textBox_user">
+            <div class="userFlex">
+              <img src="<%= productRootPath %>img/user_photo_01.png">
+            </div>
+            <div class="userCommentBox">
+              <p><span class="marker">「コンディショニング」</span>これは僕が15年間プロの世界で大事にしてきたことです。<br>
+<br>
+肘の手術を5回経験する中で、ピッチャーとして生き残るにはどうしたらいいか考えたときに、活躍してる選手を観察したんです。するとやっぱり誰よりも練習して、<span class="marker">コンディショニングを徹底しているんですよね。</span>もちろん技術だったり能力もありますけど、その目に見えない準備力が結果を左右するんじゃないかと思ってます。<br>
+<br>
+そんな中、<span class="marker">先輩の山井大介投手が水素を吸ってずっと元気なのを見て、水素吸引に興味を持ち始めました。</span>それで自分で色々調べてたどり着いたのがこのKENCOS。<br>
+<br>
+最初にこの機械を見たときは正直「え？こんなんで？！」と半信半疑でした。でも、吸い続けていたら朝が180度違うんです！<span class="marker">今までは練習の反動で、もう1回寝たいなという気持ちになっていたんですけど、投げ込みした翌日でもいつも通りに頑張れるんですよね。</span>さらにコンディショニングがものすごく維持できていて、ピッチング中、自分の納得するボールが投げられるようになったと感じたんです。<br>
+<br>
+引退した2020年は結果こそ残せませんでしたが、めちゃくちゃ調子よくて。<span class="marker">持ち運んで手軽に吸うことができるので、今ではもう吸わないと気が済まない感じですね笑</span>　コンディショニングを重視しているアスリートにはKENCOSのチカラを借りるべきだと伝えたいです。</p>
+<p class="attention">※ご年齢は取材当時のものです。個人の感想であり、商品の効果を保証するものではありません。</p>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <h2>禁煙せざるを得ない方の気分転換に</h2>
+        <div class="photoInTextSet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/mainImg03_pc.jpg"><!--/pc-->
+            <img src="<%= productRootPath %>img/mainImg03_sp.jpg" alt=""><!--/sp-->
+          </picture>
+        </div>
+        <div class="acordion"><span>詳しく見る</span></div>
+        <section class="sec_userVoice width1080" style="display: none;">
+          <div class="textBox_user">
+            <div class="userFlex">
+              <img src="<%= productRootPath %>img/user_photo_02.png">
+            </div>
+            <div class="userCommentBox">
+              <p>「オール阪神、脳梗塞」それはメディアでも大きく取り上げられました。<br>
+いやもう、動いたらあかんって、10日間絶対安静。<br>
+<br>
+<span class="marker">「ひょっとしたら喋れんようになりますから」って言われ</span>て、漫才できひんなぁって思いました。<br>
+<br>
+とりあえず、<span class="marker">お医者さんからは「まずタバコ止めてください」</span>って言われて「わかりました、止めます！」って。そうお誓いはしましたよ。でも40年以上ヘビースモーカーやったから、<span class="marker">やっぱり心の中では”吸いたいな～”って。</span><br>
+<br>
+もう煙が出るだけでもいい、ニコチン・タールが入ってなかってもええ・・タバコ見たいな感じのもんが欲しかったんです。KENCOSは煙出るでしょ？ほな、これいいじゃないですか。<span class="marker">タバコ吸ってる気分になって、健康にもいいなんて最高やないですか！</span>私は健康にならなあかんのです。<br>
+<br>
+今、注目されている水素を吸引できるなんて、時代が変わってきたんとちゃいます？</p>
+<p class="attention">※ご年齢は取材当時のものです。個人の感想であり、商品の効果を保証するものではありません。</p>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <h2>その他、こんな人にもおすすめ！</h2>
+        <div class="photoInTextSet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/mainImg04.jpg"><!--/pc-->
+            <img src="<%= productRootPath %>img/mainImg04.jpg" alt=""><!--/sp-->
+          </picture>
+        </div>
+
+
+
+        <div class="photoInTextSet mgt-80">
+          <picture>
+            <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/mainImg05.jpg"><!--/pc-->
+            <img src="<%= productRootPath %>img/mainImg05.jpg" alt=""><!--/sp-->
+          </picture>
+        </div>
+
+      </section>
+      <section class="sec_selectColor width1080">
+        <img src="<%= productRootPath %>img/set_title.jpg">
+        <h2>選べる5種類のカラー</h2>
+        <div>
+          <div class="slick-wrp slick-wrp1">
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/color01.png" alt="" />
+              </div>
+              <!--h3 class="slick-ttl">カルーセル見出し０１</h3>
+              <p class="slick-txt">カルーセルテキスト０１カルーセルテキスト０１カルーセルテキスト０１</p-->
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/color02.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/color03.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/color04.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/color05.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="slider thumb-item-nav1">
+          <li><img src="<%= productRootPath %>img/color01.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/color02.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/color03.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/color04.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/color05.png" alt=""></li>
+        </ul>
+        <h2>オリエンタルバイオ限定セット内容</h2>
+        <div>
+          <div class="slick-wrp slick-wrp2">
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/cartridge01.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/cartridge02.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/cartridge03.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/cartridge04.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="slider thumb-item-nav2">
+          <li><img src="<%= productRootPath %>img/cartridge01.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/cartridge02.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/cartridge03.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/cartridge04.png" alt=""></li>
+        </ul>
+        <div class="textBox">
+          <div class="bold">フレーバーカートリッジ1箱（3本入り）</div><div class="textSmall">4種類の中からお選びください</div>
+          <div style="color:red;">※+330円でタバコフレーバーも選択可能<br>お電話にてお問い合わせください</div>
+        </div>
+        <div class="singleImg">
+          <img src="<%= productRootPath %>img/other00.png" alt="" />
+        </div>
+        <div class="textBox">
+          <div class="bold">KENCOSシリーズ専用電解液1袋（5本入り）</div>
+          <div class="markPlus">+</div>
+        </div>
+        <h2>プレゼント</h2>
+
+        <div>
+          <div class="slick-wrp slick-wrp3">
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/other01.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/other02.png" alt="" />
+              </div>
+            </div>
+            <div class="slick-box">
+              <div class="slick-imgWrp">
+                <img class="slick-img" src="<%= productRootPath %>img/other03.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="slider thumb-item-nav3">
+          <li><img src="<%= productRootPath %>img/other01.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/other02.png" alt=""></li>
+          <li><img src="<%= productRootPath %>img/other03.png" alt=""></li>
+        </ul>
+        <div class="textBox">
+          <div class="bold">
+          ①ケンコス専用電解液2袋（5本入り）<br>
+          ②ポーチ：1個<br>
+          ③ACアダプター：1個<br></div>
+          <div class="textSmall">
+            ※ACアダプターやポーチは、色や形が変更となる場合がございます。<br>
+            ※スターターキットの内容やパッケージは予告なく変更となる場合がございます。<br>
+            
+            ※使用上の注意：妊娠中や授乳中の方、アレルギーや喘息をお持ちの方は、医師とご相談の上、ご使用ください。
+          </div>
+        </div>
+      </section>
+
+
+<!--複数使用-->
+      <section id="stakit-c" class="sec_form crt03 width1080">
+        <div class="cartFlex">
+          <div class="cartPhoto">
+            <picture>
+              <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/buy_img_pc.jpg"><!--/pc-->
+              <img src="<%= productRootPath %>img/buy_img.jpg" alt=""><!--/sp-->
+            </picture>
+          </div>
+
+        </div>
+        <div class="wrapper">
+          <div class="inner">
+
+            <div class="stakit_c_cta">
+              <form action="/cart/set" id="cart_form">
+
+                <div class="sel">
+                  <div class="sel_color">
+                    <p class="txt-label">カラー</p>
+                    <select name="color">
+                      <option value="K41">シャンパンゴールド</option>
+                      <option value="K42">ブラック</option>
+                      <option value="K43">ネイビー</option>
+                      <option value="K44">ホワイト</option>
+                      <option value="K45">ピンク</option>
+                    </select>
+                  </div>
+                  <!--/sel_color-->
+                  <div class="sel_flavor">
+                    <p class="txt-label">フレーバー</p>
+                    <select name="flavor">
+                      <option value="KF01">ビタミンレモン</option>
+                      <option value="KF02">キシリトールメンソール</option>
+                      <option value="KF03">カテキングリーン</option>
+                      <option value="KF04">フレーバーカートリッジアソート</option>
+                    </select>
+                  </div>
+                  <!--/sel_flavor-->
+                  <div class="sel_number">
+                    <p class="txt-label">数量</p>
+                    <select name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <!--/sel_number-->
+                </div>
+                <div class="btn">
+                  <p class="btn_cart">
+                    <input type="submit" name="submit1" value="KENCOS4で新習慣をスタート！">
+                  </p>
+                </div>
+                <!--/btn-->
+                <div class="textBox textCenter">
+                  また、よりお手軽にお楽しみいただきたい方は、
+                </div>
+                <div class="creditFlex">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/creditPhoto_pc.jpg"><!--/pc-->
+                    <img src="<%= productRootPath %>img/creditPhoto.jpg" alt=""><!--/sp-->
+                  </picture>
+                </div>
+                <div class="btn">
+                  <div class="btn_tel_w">
+                    <p class="btn_tel">
+                      <a href="tel:0120237600"><input value="0120-237-600"></a>
+                    </p>
+                  </div><!--/btn_tel_w-->
+                  <p class="txt">※お電話での注文のみ分割払いがご利用いただけます。</p>
+                </div>
+                <!--button type="submit" name="submit">KENCOS4で新習慣をスタート！</button-->
+              </form>
+            </div>
+            <!--/stakit_c_cta-->
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#cta -->
+<!--/複数使用-->
+
+
+
+      <section class="sec_userVoice width1080" style="margin-bottom:5vw;">
+        <img src="<%= productRootPath %>img/user_title.jpg">
+          <div class="textBox">
+            <div class="userFlex">
+              <img src="<%= productRootPath %>img/user_photo_03.png">
+            </div>
+            <div class="userCommentBox">
+              <p>スポーツってどれだけ練習をこなせるかじゃないですか。上手くなるためには高い強度の練習を繰り返さなくちゃならない。<br>
+<br>
+ただし<span class="marker">練習を一生懸命積めば疲労もするし、ケガも近くなる…。</span>だから、練習するだけじゃなくて、休む、考える、心理面をケアする、栄養を摂るとか、<span class="marker">とにかく幅広い要素でコンディショニング維持っていう事前準備を選手たちは大切にしています。</span><br>
+<br>
+流行っては消えて行くものってたくさんありますが、私の知っている限り<span class="marker">水素を利用している選手はかなりいて、10年以上続けている選手も多く見ています。</span>「選手が続けている」＝「いいもの」ですからコンディショニング維持には効果があるんだと思います。<br>
+<br>
+なかでも、<span class="marker">「いつでも」「手軽に」「水素が吸える」</span>KENCOS4はプロ意識を持ったスポーツ選手のコンディショニング維持にはとても有利だし、<span class="marker">一般の方にも役立てる要素の一つじゃないのかなと思います。</span></p>
+<p class="attention">※ご年齢は取材当時のものです。個人の感想であり、商品の効果を保証するものではありません。</p>
+            </div>
+          </div>
+
+          <div class="textBox">
+            <div class="userFlex">
+              <img src="<%= productRootPath %>img/user_photo_04.png">
+            </div>
+            <div class="userCommentBox">
+              <p>もともと健康には自信があるほうですが、<span class="marker">喫煙歴は長くて。</span><br>
+<br>
+完全にやめるのは難しいけど、<span class="marker">量を減らせたらいいなと思ってKENCOS4を買ってみたんですが、いいですね。</span>持ち運びも便利だし、吸っても周りに迷惑をかけることもない。<br>
+<br>
+私は<span class="marker">タバコ１日２箱吸っていて月３万円くらい使っていたから、KENCOSの価格も気になりませんでしたね。</span>たばこを吸いたくなったらこれを吸えばいいわけだし。<br>
+<br>
+「タバコ吸いたい」というイライラも紛れますね。これ<span class="marker">（KENCOS４）を吸ってるから。タバコみたいな煙が出るし。</span>とってもいいです。
+現在、タバコは１日１箱まで減りました。ゆくゆくはケンコスだけにするのを目指していますよ。</p>
+<p class="attention">※ご年齢は取材当時のものです。個人の感想であり、商品の効果を保証するものではありません。</p>
+            </div>
+          </div>
+
+          <div class="textBox">
+            <div class="userFlex">
+              <img src="<%= productRootPath %>img/user_photo_05.png">
+            </div>
+            <div class="userCommentBox">
+              <p>喫煙者は感染症にかかったときに<span class="marker">重症化するリスクが高いって言われてますよね。</span><br>
+<br>
+それが怖くて禁煙したいとずっと思っていたんです。そんな時、タイミングよくKENCOSをすすめられたので、試しに使い始めて3ヶ月。
+<br>
+<span class="marker">タバコで一服したい…</span>そんな気持ちを何とか抑えてKENCOSで気分転換をしているうちに、<span class="marker">今では1日1箱吸っていたタバコが0本になりました。</span><br>
+<br>
+正直まだタバコを吸いたい気持ちはありますが、家族も私が禁煙に成功したことに喜んでくれていたので、このままKENCOS生活を続けられたらいいですね。</p>
+<p class="attention">※ご年齢は取材当時のものです。個人の感想であり、商品の効果を保証するものではありません。</p>
+            </div>
+          </div>
+
+      </section>
+
+
+
+
+
+<!--複数使用-->
+      <section id="stakit-c" class="sec_form crt03 width1080">
+        <div class="cartFlex">
+          <div class="cartPhoto">
+            <picture>
+              <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/buy_img_pc.jpg"><!--/pc-->
+              <img src="<%= productRootPath %>img/buy_img.jpg" alt=""><!--/sp-->
+            </picture>
+          </div>
+
+        </div>
+        <div class="wrapper">
+          <div class="inner">
+
+            <div class="stakit_c_cta">
+              <form action="/cart/set" id="cart_form2">
+
+                <div class="sel">
+                  <div class="sel_color">
+                    <p class="txt-label">カラー</p>
+                    <select name="color">
+                      <option value="K41">シャンパンゴールド</option>
+                      <option value="K42">ブラック</option>
+                      <option value="K43">ネイビー</option>
+                      <option value="K44">ホワイト</option>
+                      <option value="K45">ピンク</option>
+                    </select>
+                  </div>
+                  <!--/sel_color-->
+                  <div class="sel_flavor">
+                    <p class="txt-label">フレーバー</p>
+                    <select name="flavor">
+                      <option value="KF01">ビタミンレモン</option>
+                      <option value="KF02">キシリトールメンソール</option>
+                      <option value="KF03">カテキングリーン</option>
+                      <option value="KF04">フレーバーカートリッジアソート</option>
+                    </select>
+                  </div>
+                  <!--/sel_flavor-->
+                  <div class="sel_number">
+                    <p class="txt-label">数量</p>
+                    <select name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <!--/sel_number-->
+                </div>
+                <div class="btn">
+                  <p class="btn_cart">
+                    <input type="submit" value="KENCOS4で新習慣をスタート！">
+                  </p>
+                </div>
+                <!--/btn-->
+                <div class="creditFlex">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/creditPhoto_pc.jpg"><!--/pc-->
+                    <img src="<%= productRootPath %>img/creditPhoto.jpg" alt=""><!--/sp-->
+                  </picture>
+                </div>
+                <div class="btn">
+                  <div class="btn_tel_w">
+                    <p class="btn_tel">
+                      <a href="tel:0120237600"><input value="0120-237-600"></a>
+                    </p>
+                  </div><!--/btn_tel_w-->
+                  <p class="txt">※お電話での注文のみ分割払いがご利用いただけます。</p>
+                </div>
+                <!--button type="submit" name="submit">KENCOS4で新習慣をスタート！</button-->
+              </form>
+            </div>
+            <!--/stakit_c_cta-->
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#cta -->
+<!--/複数使用-->
+
+
+      <section class="sec_enjoyFlavor width1080">
+        <h2>楽しさ広がる4種のフレーバー</h2>
+        <div class="flavorFlex">
+          <img class="slick-img" src="<%= productRootPath %>img/flavor01.png" alt="" />
+          <img class="slick-img" src="<%= productRootPath %>img/flavor02.png" alt="" />
+        </div>
+      </section>
+
+
+
+
+      <section class="sec_use width1080" style="margin-top:5vw">
+        <h2>使用方法</h2>
+          <img class="slick-img" src="<%= productRootPath %>img/step.jpg" alt="" />
+
+        <img src="<%= productRootPath %>img/set_title_yt.jpg">
+
+        <div class="youtube"><iframe width="100%"  src="https://www.youtube.com/embed/9yFuDRbgU_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+      </section>
+
+
+
+      <section class="sec_question width1080" style="margin-top:5vw">
+        <h2>よくあるご質問</h2>
+      </section>
+      <section class="p-item__faq width1080">
+        <div class="faq" style="margin-bottom:5vw;">
+  <div class="new">
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    製品の保証について
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>保証期間はありますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          製品の保証期間は、ご購入日（伝票発行日）から1年間がメーカー保証期間となっております。<br>
+          お買い上げ明細書と、製品本体に同梱されているKENCOS4保証書は大切に保管してください。<br>
+          ※保証期間についてご不明な点などございましたら下記へお問い合わせください。<br>
+          ■フリーダイヤル：0120-079-996（月～金　10：00～18：30　土日・祝休）
+        </div>
+      </div>
+    </div>
+    <!-- /. -->    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    本体の仕様について
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>KENCOS4のサイズ・重さを教えてください</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          幅55mm×高 132mm×厚 24mm（ヒンジ部分を含む幅 65mm）<br>
+          重さ128g (電解液、フレーバーカートリッジは除く）<br>
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    使用について
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>妊娠中ですが、使用できますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -59px;" class="js-ans answer_inner">
+          妊娠中、授乳中のお客様はかかりつけのお医者様にご相談の上、ご使用をお願いいたします。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>20歳未満でも使用できますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          KENCOS4は日本の法令上、20歳未満の方でもお使いいただけます。<br>
+          フレーバーカートリッジをご利用いただくと水蒸気が発生し、喫煙のきっかけになる可能性がございますので、水素モードでご使用いただくことをおすすめしております。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>禁煙エリアに指定されている路上や飲食店など、公共の場で使用しても大丈夫ですか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          KENCOS4はタバコではございませんので利用可能です。<br>
+          しかし、周囲にたばこを吸っていると誤解を与えてしまう可能性がございますので、店舗等では責任者にご確認の上でご使用することをおすすめいたします。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    吸い方について
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>１日の使用目安はどのくらいですか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          １回5分の吸入を5回が目安となります。<br>水素を体内に留めておくことはできませんので、こまめな吸引が大切です。使用目安を上回ってご使用いただいても問題ございません。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>どのように吸えばいいのですか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          吸う際には吸い口に口を付け、吐く際には吸い口から口を離してください。<br>
+          水素モードの時には深呼吸をするように1.5～3秒吸って、吐くを繰り返してください。<br>
+          また、水素は無味無臭ですので、吸っている感覚が欲しいという方はフレーバーをご利用ください。<br>
+          フレーバー使用時には深く吸い過ぎるとむせる可能性がございますので、ご無理のないように吸って吐くを繰り返してください。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>どのタイミングで吸うのがおすすめですか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          起床後や、1日の終わり、一息入れたいときなど、気分を切り替えてリフレッシュしたいときにご使用いただくのがおすすめです。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    成分について
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>フレーバーカートリッジにニコチンやタールは含まれていますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          純正品のフレーバーカートリッジにニコチンやタールは含まれておりません。<br>
+          また、日本の食品衛生法に適合した食品添加物以外は入っておりません。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>副流煙はありますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          健康被害を与える副流煙は発生いたしません。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    水素の発生について
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>水素発生量はどのくらいですか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          水素ガスが１分間に最大8ml発生します。<br>
+          5分間の吸入で1.0ppm濃度の水素水を3.5L飲んだ水素摂取量に相当します。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>水素発生の仕組みを教えて下さい。</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          専用の電解液を電気分解し、水素ガスを発生させております。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    消耗品について
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>消耗品はどれくらいで交換すればいいですか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          【電解液】<br>
+            ・通常使用後、1週間経過をした場合<br>
+            ・もしくは1週間経過していなくても、電解液が電解槽の電解液下限ライン（2本ある線のうち、下の線）を下回った場合<br>
+            ・例え1度も使用していなくても注入後30日経った場合<br><br>
+          【フレーバー】<br>
+          ・吸引の際にフレーバーが出なくなったり、焦げたにおいや味がする場合<br>
+          目安：吸引回数600回（吸引時間1.5秒/回）<br><br>
+          【電極層】<br>
+          ・約6か月<br><br>
+
+          ※いずれも使用頻度によって異なります。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>電解液は注ぎ足して使用してもいいですか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          注ぎ足しで使用をすると、電解液の濃度が濃くなり電極が傷む原因となります。長くお使いいただくためにも注ぎ足しはせずにご使用ください。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    故障かなと思ったら
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>電解液が茶色に変色してきました</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          化学反応により徐々に変色することがございますが、ご使用上の問題はございません。<br>
+          気になる方はこまめに電解液をお取替えいただきますようお願いいたします。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>電解槽から出る泡（水素）が少なくなってきました</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          電極層の寿命が近づいている可能性があります。新しい電極層をご準備ください。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>KENCOSを傾けるとランプが消灯し、泡がでません</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          傾きセンサーを搭載しており、本体を75℃以上傾けると安全装置が働き、水素発生を停止します。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>初めて使用しますが、水蒸気が出ません</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          空気が漏れている可能性があります。フレーバーカートリッジ、電解槽、吸引ぶたが正しく装着されているかご確認ください。<br>なお、購入時に装着されているブラックカートリッジでは水蒸気が発生いたしませんのでご注意ください。<br>
+          また、初めてお使いいただく場合は、十分に充電のうえご使用ください。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div style="font-weight: bold;font-size: 16px; text-align: left; padding: 10px; background: #229569; color: #FFFFFF; border-radius: 5px; text-align: left; margin-bottom: 10px;">
+    その他
+    </div>
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>KENCOSを吸うとどんな効果があるの？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          リフレッシュ効果が期待できます。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>禁煙効果はありますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          製品自体に禁煙効果はございませんが、タバコの代わりにお使いいただくことにより、減煙効果が期待できます。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>充電はどのくらいで完了しますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+          充電が全くない状態から約2時間程度です。
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+    <div class="faq_block c-radius_4">
+      <div class="js-ques question">
+        <span>フル充電でどのくらい使用できますか？</span>
+      </div>
+      <div class="answer">
+        <div style="margin-top: -600px;" class="js-ans answer_inner">
+        ・水素吸引のみ…約40分<br>
+        ・水素・フレーバー併用…約20分（※フレーバーの使用状況によって異なります）
+        </div>
+      </div>
+    </div>
+    <!-- /. -->
+</div>
+</div>
+      </section>
+
+
+
+
+
+<!--複数使用-->
+      <section id="stakit-c" class="sec_form crt03 width1080">
+        <div class="cartFlex">
+          <div class="cartPhoto">
+            <picture>
+              <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/buy_img_pc.jpg"><!--/pc-->
+              <img src="<%= productRootPath %>img/buy_img.jpg" alt=""><!--/sp-->
+            </picture>
+          </div>
+
+        </div>
+        <div class="wrapper">
+          <div class="inner">
+
+            <div class="stakit_c_cta">
+              <form action="/cart/set" id="cart_form3">
+
+                <div class="sel">
+                  <div class="sel_color">
+                    <p class="txt-label">カラー</p>
+                    <select name="color">
+                      <option value="K41">シャンパンゴールド</option>
+                      <option value="K42">ブラック</option>
+                      <option value="K43">ネイビー</option>
+                      <option value="K44">ホワイト</option>
+                      <option value="K45">ピンク</option>
+                    </select>
+                  </div>
+                  <!--/sel_color-->
+                  <div class="sel_flavor">
+                    <p class="txt-label">フレーバー</p>
+                    <select name="flavor">
+                      <option value="KF01">ビタミンレモン</option>
+                      <option value="KF02">キシリトールメンソール</option>
+                      <option value="KF03">カテキングリーン</option>
+                      <option value="KF04">フレーバーカートリッジアソート</option>
+                    </select>
+                  </div>
+                  <!--/sel_flavor-->
+                  <div class="sel_number">
+                    <p class="txt-label">数量</p>
+                    <select name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <!--/sel_number-->
+                </div>
+                <div class="btn">
+                  <p class="btn_cart">
+                    <input type="submit" value="KENCOS4で新習慣をスタート！">
+                  </p>
+                </div>
+                <!--/btn-->
+                <div class="textBox textCenter">
+                  また、よりお手軽にお楽しみいただきたい方は、
+                </div>
+                <div class="creditFlex">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="<%= productRootPath %>img/creditPhoto_pc.jpg"><!--/pc-->
+                    <img src="<%= productRootPath %>img/creditPhoto.jpg" alt=""><!--/sp-->
+                  </picture>
+                </div>
+                <div class="btn">
+                  <div class="btn_tel_w">
+                    <p class="btn_tel">
+                      <a href="tel:0120237600"><input value="0120-237-600"></a>
+                    </p>
+                  </div><!--/btn_tel_w-->
+                  <p class="txt">※お電話での注文のみ分割払いがご利用いただけます。</p>
+                </div>
+                <!--button type="submit" name="submit">KENCOS4で新習慣をスタート！</button-->
+              </form>
+            </div>
+            <!--/stakit_c_cta-->
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#cta -->
+<!--/複数使用-->
+
+
+
+
+      <section id="contact" class="width1080">
+        <div class="inner">
+          <h2> <img class="js-res_img" src="https://bio-prd-public.s3.ap-northeast-1.amazonaws.com/lp/raffineealpha/img/contact_tit_pc.png" alt="お電話でのご注文・ご質問もお気軽にお問合せ下さい"> </h2>
+          <p class="fon22">「ご注文窓口」は、専任スタッフが<br class="sp">お客様の<br class="pc tab">ご要望・ご質問に丁寧に<br class="sp">お応えいたします。</p>
+          <p><img class="js-res_img" src="https://bio-prd-public.s3.ap-northeast-1.amazonaws.com/lp/raffineealpha/img/contact_tel_pc.png" alt=""></p>
+          <div class="aligncenter"> 年中無休、<strong>9時～18時半</strong>で対応しております。<br>お気軽にご利用くださいませ。 </div>
+        </div>
+        <!--/inner-->
+      </section>
+      <!--/#contact-->
+      <section id="info" class="inner width1080">
+        <h2 class="aligncenter"> <img class="js-res_img" src="https://bio-prd-public.s3.ap-northeast-1.amazonaws.com/lp/raffineealpha/img/info_tit_pc.png" alt="オリエンタルバイオ"> </h2>
+        <div id="info-inner" class="clearfix">
+          <dl class="info-col"> <dt>お支払いについて</dt>
+            <dd>
+              <p>□ 消費税について<br> 商品の価格は、消費税込みです。</p>
+              <p>□ 代金引換<br> 商品配達時に配達員に代金を直接お支払いいただきます。<br> 代金引換手数料は、弊社が負担いたします。</p>
+            </dd> <dt>送料・配送について</dt>
+            <dd>
+              <p>□ 配送業者<br> 佐川急便でお届けします。</p>
+              <p>□ 送料<br> 送料は無料でお届けいたします。</p>
+            </dd> <dt>商品に関するお問い合わせ</dt>
+            <dd>
+              <p>当社営業時間　平日10時～18時半まで<br> フリーダイヤル：0120-079-996</p>
+            </dd>
+          </dl>
+          <dl class="info-col"> <dt>返品について</dt>
+            <dd>
+              <p>当社営業時間　平日10時～18時半まで<br> フリーダイヤル：　0120-079-996<br> ご連絡頂き、返品の旨をお伝えください。<br> 担当者より返品手順のご説明申し上げます。</p>
+              <p>〒103-0023<br> 東京都中央区日本橋本町1-5-4 住友不動産日本橋ビル1階<br> オリエンタルバイオ株式会社</p>
+              <p>お客様のご都合により返品される場合は、下記の通りの条件となります。</p>
+              <p>※交換・返品のお申し出は、ご注文商品到着後8日以内にお願いいたします。<br> ※ご返品時にかかる送料（宅配送料・現金書留送料など）は、お客様のご負担となります。<br> ※未開封品に限り返品をお受けしております。（外装フィルムを含む）<br> ※割引制度をご購入いただいた場合は、ご購入時の割引単価ではなく、お客様が既に消費（開封）された商品を本来の販売価格に割り当て、ご購入時のお支払額との差額を求めて返金額を算出いたします。</p>
+            </dd>
+          </dl>
+        </div>
+        <!--/info-inner-->
+      </section>
+      <!--/#info-->
+    </main>
+
+  <!-- footer -->
+  <footer id="footer" class="f">
+    <div class="f_inner">
+      <div class="f_ci">
+        <p class="f_logo"><img class="js-res_img" src="<%= commonRootPath %>img/logo_ftr_pc.png" alt="オリエンタルバイオ"></p>
+        <p class="f_copyright">(C) 2018 ORIENTALBIO Co.,Ltd.</p>
+      </div>
+      <ul class="f_menu">
+        <li><a href="<%= corporateURL %>company/" target="_blank">企業情報</a></li>
+        <li><a href="<%= corporateURL %>terms" target="_blank">ご利用に当たって</a></li>
+        <li><a href="<%= corporateURL %>privacy" target="_blank">プライバシーポリシー</a></li>
+        <li><a href="<%= frontURL %>tokutei/" target="_blank">特定商取引法に基づく表記</a></li>
+        <li><a href="<%= frontURL %>ContactInput" target="_blank">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <!--/f_inner-->
+  </footer>
+  <!-- /footer -->
+  </div>
+  <!--/kencos-->
+
+<script>
+  /*
+$(function() {
+$('.slick-wrp').slick({
+infinite: true,
+slidesToShow: 1,
+slidesToScroll: 1,
+arrows: false,
+fade: true,
+asNavFor: '.thumb-item-nav'
+});
+$('.thumb-item-nav').slick({
+accessibility: true,
+autoplay: true,
+autoplaySpeed: 4000,
+speed: 400,
+arrows: true,
+infinite: true,
+slidesToShow: 5,
+slidesToScroll: 1,
+asNavFor: '.slick-wrp',
+focusOnSelect: true,
+});
+});
+*/
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="<%= productRootPath %>js/slick.js"></script>
+<script type="text/javascript">
+$(function(){
+    sliderSetting();
+
+    function sliderSetting(){
+
+        var width = $(window).width();
+
+        if(width <= 767){
+            $('.slick-wrp').not('.slick-initialized').slick({
+                arrows: true,dots: true,
+            });
+        } else {
+            $('.slick-wrp.slick-initialized').slick('unslick');
+        }
+    }
+
+    sliderSetting();
+
+    $(window).resize( function() {
+        sliderSetting();
+    });
+});
+
+
+  $(document).ready(function(){
+
+  /* faq open / close */
+  $('.js-ans').each(function () {
+    $(this).css('margin-top', -600);
+  });
+
+  $('.js-ques').click(
+    function () {
+      var s = $(this).parent().find('.js-ans');
+      if (s.css('margin-top') == "0px") {
+        s.animate({
+          marginTop: -s.height() - 40,
+          queue: false
+        }, 500);
+        $(this).find('span').css('background-image', 'url(img/tab_faq_icon_open.gif)');
+      } else {
+        s.css('margin-top', -s.height() - 40);
+        s.animate({
+          marginTop: '0',
+          queue: false
+        }, 500);
+        $(this).find('span').css('background-image', 'url(img/tab_faq_icon_close.gif)');
+      }
+    }
+  );
+
+});
+</script>
+<script src="../../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/* ------------------------------
+// css3
+------------------------------ */
+/* ------------------------------
+// font-size
+------------------------------ */
+/* ------------------------------
+// gradient
+------------------------------ */
+/* ------------------------------
+// Flexbox
+------------------------------ */
+/* ------------------------------
+// keyframe_animation
+------------------------------ */
+/* ------------------------------
+// placeholder-style
+------------------------------ */
+/* ------------------------------
+// clearfix
+------------------------------ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+li {
+  list-style-type: none;
+  margin: 0;
+  paddgin: 0; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* custom */
+img {
+  vertical-align: bottom; }
+
+body {
+  font-size: 20px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif"; }
+
+.h {
+  background-color: #fff;
+  box-shadow: 0px 7px 8px -7px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 10;}
+  .h_inner {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-top: 8px; }
+    .h_inner:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      clear: both;
+      visibility: hidden; }
+      .h_tel.sp {}
+    @media screen and (max-width: 991px) {
+      .h_inner {
+        width: 100%;
+        padding: 0; }
+      .h_tel.sp {
+        padding-top: 8px;}}
+  .h_logo {
+    float: left;
+    height: 60px;
+    line-height: 60px; }
+    .h_logo img {
+      vertical-align: middle; }
+    @media screen and (max-width: 991px) {
+      .h_logo {
+        height: 40px;
+        line-height: 40px;
+        margin-left: 5px; }
+      .h_logo.epa {
+        display: none; }
+        .h_logo img {
+          width: 154px;
+          padding-top: 16px; } }
+  .h_tel {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    float: right;
+    height: 60px;
+    margin-right: 5px;}
+    .h_tel_time {
+      padding-left: 10px;
+      font-size: 13px;
+      line-height: 1.25em;
+      color: #333; }
+    @media screen and (max-width: 991px) {
+      .h_tel {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        -o-align-content: center;
+        align-content: center;
+        height: 50px; }
+        .h_tel.epa {
+           height: 13vw;
+        }
+        .h_tel.epa .h_tel_img img {
+          width: 95%;
+          display: block;
+          margin: 0 auto;
+        }
+        .h_tel_img {
+          line-height: 1;
+          font-size: 0;
+          /*padding: 8px 0 5px;*/ }
+          .h_tel_img img {
+            width: 150px; }
+          .h_tel_img. img {
+            width: 180px; }
+        .h_tel_time {
+          padding-left: 0;
+          font-size: 10px;
+          text-align: center; }
+          .h_tel_time br {
+            display: none; } }
+
+.f {
+  background: #1757AF;
+  color: #FFF;
+  padding: 10px 0 30px; }
+  .f_inner {
+    margin: auto;
+    width: 1000px; }
+    @media screen and (max-width: 991px) {
+      .f_inner {
+        width: 100%; } }
+  .f_ci {
+    margin-top: -10px; }
+    @media screen and (max-width: 991px) {
+      .f_ci {
+        margin-left: 10px;
+        margin-right: 10px; } }
+  .f_logo {
+    font-size: 0;
+    background: #FFF;
+    border-radius: 0 0 10px 10px;
+    display: inline-block;
+    margin-right: 60px;
+    padding: 14px 20px 14px 20px; }
+    .f_logo img {
+      vertical-align: bottom; }
+    @media screen and (max-width: 991px) {
+      .f_logo {
+        margin-right: 0;
+        padding: 10px 15px 10px 15px; }
+        .f_logo img {
+          width: 130px; } }
+  .f_copyright {
+    font-size: 14px;
+    text-align: center;
+    margin:  10px 0;}
+    @media screen and (max-width: 991px) {
+      .f_copyright {
+        padding-top: 15px;
+        font-size: 10px; } }
+  .f_menu {
+    padding-top: 30px;
+    font-size: 18px;
+    text-align: center; }
+    @media screen and (max-width: 991px) {
+      .f_menu {
+        padding-top: 0; } }
+    .f_menu > * {
+      display: inline-block; }
+      .f_menu > *::after {
+        content: '｜';
+        display: inline;
+        margin-left: .25em; }
+      .f_menu > *:nth-last-child(1)::after {
+        display: none; }
+      .f_menu > * a {
+        color: #FFF;
+        text-decoration: underline; }
+      @media screen and (max-width: 991px) {
+        .f_menu > * {
+          display: block;
+          padding-top: 5px; }
+          .f_menu > *::after {
+            display: none; }
+          .f_menu > * a {
+            font-size: 14px; } }
+
+.pc {
+  display: block; }
+  @media screen and (max-width: 1199px) {
+    .pc {
+      display: block; } }
+  @media screen and (max-width: 991px) {
+    .pc {
+      display: block; } }
+  @media screen and (max-width: 640px) {
+    .pc {
+      display: none; } }
+
+.tab {
+  display: block; }
+  @media screen and (max-width: 1199px) {
+    .tab {
+      display: block; } }
+  @media screen and (max-width: 991px) {
+    .tab {
+      display: block; } }
+  @media screen and (max-width: 640px) {
+    .tab {
+      display: none; } }
+
+.sp {
+  display: none; }
+  @media screen and (max-width: 1199px) {
+    .sp {
+      display: none; } }
+  @media screen and (max-width: 640px) {
+    .sp {
+      display: none; } }
+  @media screen and (max-width: 640px) {
+    .sp {
+      display: block; } }
+
+@media screen and (max-width: 640px) {
+  img {
+    width: 100%; } }
+
+.oshirase {
+  text-align: center;
+  margin: 1rem auto; }
+
+
+.cashress_banner {
+  width: 940px;
+  margin: 10px auto 0 auto;
+}
+    @media screen and (max-width: 991px) {
+      .cashress_banner {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+
+/* ------------------------------------------
+  fixed tel banner
+ ------------------------------------------ */
+.fixed_tel {
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
+  max-width: 260px;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+  z-index: 10000;
+}
+.fixed_tel.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.fixed_tel img {
+  width: 100%;
+}
+.fixed_tel_close {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  background-color: rgba(0,0,0,.6);
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.fixed_tel_close:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 640px) {
+  .fixed_tel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto 4px;
+    max-width: 350px;
+  }
+}

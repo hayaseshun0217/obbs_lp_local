@@ -1,0 +1,72 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="エパゴールド">
+  <meta name="description" content="小林式EPA配合エパゴールド">
+  <title>エパゴールド｜オリエンタルバイオ</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="facebook-domain-verification" content="3di5lwsx4yb1dwy6eqvh84h2p61qvt" />
+
+  <!-- 共通リソース -->
+  <link rel="stylesheet" href="<%= commonRootPath %>css/common.css" type="text/css" media="all">
+  <script src="<%= commonRootPath %>js/common.js"></script>
+  <!-- /共通リソース -->
+
+  <!-- 専用リソース -->
+  <link rel="stylesheet" href="<%= productRootPath %>../detail/css/style.css" type="text/css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="<%= productRootPath %>js/main.js" defer></script>
+  <!-- /専用リソース -->
+  <script type="text/javascript">
+    $(function () {
+
+      //USER’S VOICE：アコーディオン
+      $('.voice_box .users_voice_02').hide();
+      $('.voice_box .more_btn').click(function () {
+        $(this).parent().parent().toggleClass('is_show');
+        $(this).prev('.users_voice_02').slideToggle('slow');
+        $(this).prevAll('.users_voice_02').children('img').toggleClass('round_style');
+        $(this).prevAll('.users_voice_01').children('img').toggleClass('round_style');
+        $(this).prevAll('.users_voice_01').children('img').toggleClass('both_sides_style');
+
+        /* 開く・閉じるボタン表示判定 */
+        if ($(this).children('.close').css('display') == 'none') {
+          //開くボタン表示、閉じるボタン非表示中の場合
+          $(this).children('.close').show(); //閉じるボタン表示
+          $(this).children('.more').hide(); //開くボタン非表示
+        } else {
+          //開くボタン非表示、閉じるボタン表示中の場合
+          $(this).children('.close').hide(); //閉じるボタン非表示
+          $(this).children('.more').show(); //開くボタン表示
+        }
+      });
+
+      //Q&Aアコーディオン
+      $('.qa_box .qa_answer').hide();
+      $('.qa_box .qa_question').click(function () {
+        $(this).next('.qa_answer').slideToggle('1000');
+        $(this).toggleClass('open');
+      });
+
+      //フッター上：インフォメーション アコーディオン
+      $('#info_list .list_box .info_text').hide();
+      $('#info_list .list_box .info_caption').click(function () {
+        $(this).next('.info_text').slideToggle('1000');
+        $(this).toggleClass('open');
+      });
+
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PH4SDD');</script>
+  <!-- End Google Tag Manager -->
+
+</head>

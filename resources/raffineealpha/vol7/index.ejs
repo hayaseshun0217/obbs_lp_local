@@ -1,0 +1,170 @@
+<%
+  const commonRootPath = '../../common/';
+  const productRootPath = '../';
+  const commonComponentPath = `${commonRootPath}components/`;
+  const productComponentPath = `${productRootPath}components/`;
+%>
+<!DOCTYPE html>
+<html>
+<%- include(`${productComponentPath}_head`, {commonRootPath, productRootPath}) %>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="alpha6_2">
+
+<%- include(`${productComponentPath}_header`, {commonRootPath, productRootPath}) %>
+      <!-- main -->
+      <main class="main">
+
+        <section>
+          <div id="fv_nt" class="pc">
+            <img src="<%= productRootPath %>img/fv_nt_product_pc.jpg" alt="お客様に支えられて、販売実績25年以上！大豆発酵エキスNT配合 突然の健康リスク対策に その生活、習慣の乱れに ラフィーネ-アルファ">
+          </div>
+          <div id="_fv_nt" class="sp">
+            <img src="<%= productRootPath %>img/fv_nt_product_sp.jpg" alt="お客様に支えられて、販売実績25年以上！大豆発酵エキスNT配合 突然の健康リスク対策に その生活、習慣の乱れに ラフィーネ-アルファ">
+          </div>
+        </section>
+
+        <!-- お知らせ掲載 -->
+        <%- include(`${commonComponentPath}_common_oshirase`, {commonRootPath, productRootPath}) %>
+        <!-- /お知らせ掲載 -->
+
+      <%- include(`${productComponentPath}_interview_aizawa`, {commonRootPath, productRootPath}) %>
+
+
+        <h2 class="offer-tit-01 aligncenter" id="cta_title"><img src="<%= productRootPath %>img/offer_tit_pc.png" alt="お得な定期コースをご用意！"></h2>
+        <section id="cta01" class="cta">
+          <div class="t3_v2_cta h">
+            <a
+              href="<%= frontURL %>cart/set?code=R53&cycle=1&quantity=3"><img
+                class="js-res_img" src="<%= productRootPath %>img/button_v2_pc.png"></a>
+          </div>
+
+          <div class="t1_v2_cta">
+            <a href="<%= frontURL %>cart/set?code=R51&cycle=1&quantity=1"><img class="js-res_img" src="<%= productRootPath %>img/button_01_v2_pc.png"></a>
+          </div>
+          <%- include(`${productComponentPath}_teiki_1_total_price`, {commonRootPath, productRootPath}) %>
+          <div class="tujyo_v2">
+            <a href="<%= frontURL %>cart/set?code=501&cycle=1&quantity=1"><img class="js-res_img" src="<%= productRootPath %>img/button_tujyo_v2_pc.png"></a>
+          </div>
+          <div class="omatome_info_v2 pc" >
+            <img class="omatome_img" src="<%= productRootPath %>img/cta1_matome_v2_pc.jpg">
+          </div>
+          <div class="omatome_info_v2 sp" >
+            <img class="omatome_img" src="<%= productRootPath %>img/cta1_matome_v2_sp.jpg">
+          </div>
+        </section>
+        <div class="offer-ask pc">
+          <p class="aligncenter fontMincho fon16">ご相談はもちろん、ご注文についてもお電話でお受けしております。下記フリーダイヤルまでお気軽にお電話ください。</p>
+          <dl>
+
+            <dd class="offer-tel"><img class="js-res_img" src="<%= productRootPath %>img/offer_ask_tel_pc.png"
+                alt="0120-237-600"><br>
+              <p class="fon14">ご注文受付時間【年中無休】9:00～18:30</p>
+            </dd>
+            <dd class="aligncenter offer-notes">携帯・PHSからも<br>ご利用いただけます。</dd>
+          </dl>
+        </div>
+        <div class="offer-tel-col sp">
+          <p><a href="tel:0120237600" class="ebis_button_trigger" data-cid="2JbemGXQ" data-pid="clickcv_sp_alphalp"><img
+                src="<%= productRootPath %>img/button_tel_sp.png" alt="0120-237-600"></a></p>
+        </div>
+
+<%- include(`${productComponentPath}_voice2`, {commonRootPath, productRootPath}) %>
+
+<%- include(`${productComponentPath}_ingredient2`, {commonRootPath, productRootPath}) %>
+
+        <p class="jump-button">
+          <a href="#cta03"><img class="js-res_img" src="<%= productRootPath %>img/button_jump_cta_pc.png"></a>
+        </p>
+
+<%- include(`${productComponentPath}_more`, {commonRootPath, productRootPath}) %>
+
+<%- include(`${productComponentPath}_longseller2`, {commonRootPath, productRootPath}) %>
+
+
+        <section id="cta03" class="cta">
+          <h2 class="aligncenter"><img class="js-res_img" src="<%= productRootPath %>img/offer_msg_02_pc.png" alt="お得な定期コースをご用意！">
+          </h2>
+          <div class="t3_v2_cta h">
+            <a
+              href="<%= frontURL %>cart/set?code=R53&cycle=1&quantity=3"><img
+                class="js-res_img" src="<%= productRootPath %>img/button_v2_pc.png"></a>
+          </div>
+
+          <div class="t1_v2_cta">
+            <a href="<%= frontURL %>cart/set?code=R51&cycle=1&quantity=1"><img class="js-res_img" src="<%= productRootPath %>img/button_01_v2_pc.png"></a>
+          </div>
+          <%- include(`${productComponentPath}_teiki_1_total_price`, {commonRootPath, productRootPath}) %>
+          <div class="tujyo_v2">
+            <a href="<%= frontURL %>cart/set?code=501&cycle=1&quantity=1"><img class="js-res_img" src="<%= productRootPath %>img/button_tujyo_v2_pc.png"></a>
+          </div>
+          <div class="omatome_info_v2 pc" >
+            <img class="omatome_img" src="<%= productRootPath %>img/cta1_matome_v2_pc.jpg">
+          </div>
+          <div class="omatome_info_v2 sp" >
+            <img class="omatome_img" src="<%= productRootPath %>img/cta1_matome_v2_sp.jpg">
+          </div>
+        </section>
+
+          <div class="offer-ask pc">
+            <p class="aligncenter fontMincho fon16">ご相談はもちろん、ご注文についてもお電話でお受けしております。下記フリーダイヤルまでお気軽にお電話ください。</p>
+            <dl>
+              <dd class="offer-tel"><img class="js-res_img" src="<%= productRootPath %>img/offer_ask_tel_pc.png"
+                  alt="0120-237-600"><br>
+                <p class="fon14">ご注文受付時間【年中無休】9:00～18:30</p>
+              </dd>
+              <dd class="aligncenter offer-notes">携帯・PHSからも<br>ご利用いただけます。</dd>
+            </dl>
+          </div>
+        </section>
+
+        <div class="offer-tel-col sp">
+          <p><a href="tel:0120237600" class="ebis_button_trigger" data-cid="2JbemGXQ" data-pid="clickcv_sp_alphalp"><img
+                src="<%= productRootPath %>img/button_tel_sp.png" alt="0120-237-600"></a></p>
+        </div>
+
+        <%- include(`${productComponentPath}_call`, {commonRootPath, productRootPath}) %>
+
+        <%- include(`${productComponentPath}_quality`, {commonRootPath, productRootPath}) %>
+
+
+       <%- include(`${productComponentPath}_info`, {commonRootPath, productRootPath}) %>
+
+      </main>
+      <!-- /main -->
+
+      <%- include(`${commonComponentPath}_common_footer`, {commonRootPath, productRootPath}) %>
+
+      <%- include(`${productComponentPath}_fixedTel`, {commonRootPath, productRootPath}) %>
+
+    </div>
+
+<style type="text/css" media="screen">
+  #fixed_tel {
+    display: none;
+  }
+</style>
+
+<script src="<%= commonRootPath %>js/jQuery_v3.4.1_min.js" type="text/javascript" charset="utf-8" async defer></script>
+
+<script>
+
+$(function(){
+  var targetPosition = $('.interview').offset().top;
+  var button = $('#fixed_tel');
+  var windowHeight = 800;
+
+  $(window).scroll(function() {
+  var scrollPosition = $(window).scrollTop();
+
+  if (scrollPosition > targetPosition + windowHeight ) {
+    button.fadeIn();
+  }
+  });
+});
+</script>
+
+  </body>

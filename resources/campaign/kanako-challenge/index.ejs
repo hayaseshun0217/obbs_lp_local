@@ -1,0 +1,93 @@
+<%
+  const commonRootPath = '../../../../common/';
+  const productRootPath = './';
+  const commonComponentPath = `${commonRootPath}components/`;
+  const productComponentPath = `${productRootPath}../components/`;
+%>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>［あなたの【やってみたい】を応援させてください！］カナコトチャレンジプロジェクト</title>
+   <meta name="description" content="カナコトチャレンジページとは、プロフィギュアスケーター村上佳菜子さんが、自身でも悩んできた
+アトピー経験を生かして、あなたの「やってみたい」を全力で応援するプロジェクトです。あなたの【やってみたい】を応援させてください！">
+ <meta property="og:image" content="https://bio-prd-public.s3.ap-northeast-1.amazonaws.com/lp/campaign/kanako-challenge/img/tw_banner.png">
+  <meta property="og:description" content="Tカナコトチャレンジページとは、プロフィギュアスケーター村上佳菜子さんが、自身でも悩んできた
+アトピー経験を生かして、あなたの「やってみたい」を全力で応援するプロジェクトです。あなたの【やってみたい】を応援させてください！">
+  <meta property="og:title" content="［あなたの【やってみたい】を応援させてください！］カナコトチャレンジプロジェクト">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="<%= productRootPath %>css/reset.css">
+  <link rel="stylesheet" href="<%= productRootPath %>css/style.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PH4SDD');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<%#- include(`${productComponentPath}_head`, {productRootPath, commonRootPath}) %>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="base">
+      <div class="fv">
+        <p><img src="<%= productRootPath %>img/fv.png" alt=""/></p>
+        <div class="movie">
+          <div class="movie_inner">
+          <iframe src="https://www.youtube.com/embed/onCFuzbTkoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <p><img src="<%= productRootPath %>img/fv_ouen.png" alt=""/></p>
+      </div>
+      <div class="contents">
+        <p><img src="<%= productRootPath %>img/nayami.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/message.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/about.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/with.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/with_kanako.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/flow.png" alt=""/></p>
+
+        <div class="kiyaku">
+          <div class="kiyaku_inner">
+          <a href="http://twitter.com/share?url=<%= frontURL %>lp/campaign/kanako-challenge//&hashtags=カナコトチャレンジ,村上佳菜子" rel="nofollow"><img src="<%= productRootPath %>img/button_twiier.png" alt=""/></a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a href="https://form.run/@orientalbio-1618143791" class="forn-button"><img src="<%= productRootPath %>img/button_form.png" alt=""/></a>
+          </div>
+        </div>
+
+        <p><a href="<%= frontURL %>lp/campaign/kanako-challenge/yoko/" class="yoko"><img src="<%= productRootPath %>img/button_yoko.png" alt=""/></a></p>
+        <p><img src="<%= productRootPath %>img/profile.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/flow_detail.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/about_allerknight.png" alt=""/></p>
+        <p><img src="<%= productRootPath %>img/come.png" alt=""/></p>
+
+        <div class="kiyaku">
+          <div class="kiyaku_inner">
+          <a href="http://twitter.com/share?url=<%= frontURL %>lp/campaign/kanako-challenge/&hashtags=カナコトチャレンジ,村上佳菜子" rel="nofollow"><img src="<%= productRootPath %>img/button_twiier.png" alt=""/></a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a href="https://form.run/@orientalbio-1618143791" class="forn-button"><img src="<%= productRootPath %>img/button_form.png" alt=""/></a>
+          </div>
+        </div>
+      </div>
+      <!-- /.contents -->
+
+    </div>
+    <div class="footer">
+      <p><a href="<%= corporateURL %>"><img src="<%= productRootPath %>img/logo.png" alt=""/></a></p>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,484 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+a { color: #fff; text-decoration: none;}
+a:hover { opacity: 0.7;}
+img {
+  width: 100%;
+  height: auto;
+}
+.aligncenter { text-align: center;}
+.mgn_bottom { margin-bottom: 80px;}
+
+.cRed {
+  color: #ED1C24; }
+
+.fon14 {
+  font-size: 14px !important; }
+/*=================================================================
+  style
+=================================================================*/
+.alpha {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.alpha .header { position: relative;}
+.alpha .header .btn_tel {
+  width: 444px;
+  position: absolute;
+  top: 0;
+  right: 11px;
+}
+
+.alpha .offer_btn { position: relative;}
+.alpha .offer_btn .btn_subsc3 {
+  width: 610px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+}
+.alpha .offer_btn .btn_subsc1 {
+  width: 415px;
+  position: absolute;
+  top: 203px;
+  right: 60px;
+}
+.alpha .offer_btn .btn_single {
+  width: 415px;
+  position: absolute;
+  top: 113px;
+  right: 60px;
+}
+
+.alpha .guide_ac {
+  width: 710px;
+  margin: 0 auto 50px;
+}
+.alpha .guide_ac .guide_btn {
+  cursor: pointer;
+  position: relative;
+}
+.alpha .guide_ac .guide_btn::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  background: url("../img/guide_icon_arrow.png")no-repeat center/100%;
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out;
+  position: absolute;
+  top: 50%;
+  right: 40px;
+}
+.alpha .guide_ac .guide_btn.open::before { transform: rotate(0);}
+.alpha .guide_ac .guide_img { display: none;}
+
+.alpha .footer { position: relative;}
+.alpha .footer p[class^="btn"] {
+  width: 630px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.alpha .footer .btn01 { top: 63px;}
+.alpha .footer .btn02 { top: 173px;}
+.alpha .footer .btn03 { top: 283px;}
+.alpha .footer .btn04 { top: 393px;}
+.alpha .footer .btn05 { top: 503px;}
+
+@media screen and ( max-width: 749px) {
+.alpha .header .btn_tel {
+  width: 59.2vw;
+  right: 1.5vw;
+}
+
+.alpha .offer_btn .btn_subsc3 {
+  width: 81.3vw;
+  bottom: 10vw;
+}
+.alpha .offer_btn .btn_subsc1 {
+  width: 55.3vw;
+  top: 26.8vw;
+  right: 8vw;
+}
+.alpha .offer_btn .btn_single {
+  width: 55.3vw;
+  top: 15.1vw;
+  right: 8vw;
+}
+
+.alpha .guide_ac {
+  width: 94.7vw;
+  margin: 0 auto 6.7vw;
+}
+.alpha .guide_ac .guide_btn::before {
+  width: 6.7vw;
+  height: 6.7vw;
+  margin-top: -3.3vw;
+  right: 5.3vw;
+}
+
+.alpha .footer p[class^="btn"] { width: 84vw;}
+.alpha .footer .btn01 { top: 8.4vw;}
+.alpha .footer .btn02 { top: 23.1vw;}
+.alpha .footer .btn03 { top: 37.7vw;}
+.alpha .footer .btn04 { top: 52.4vw;}
+.alpha .footer .btn05 { top: 67.1vw;}
+}
+
+
+/* fixed cta banner */
+
+.fixed-cta {
+  display: inline-block;
+  position: fixed;
+  bottom: env(safe-area-inset-bottom);
+  right: 0;
+  margin-bottom: 0;
+  padding: 4px 8px;
+  max-width: 400px;
+  width: 100%;
+  height: 80px;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity .7s;
+}
+
+.fixed-cta__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  margin-bottom: 2px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: rgba(0,0,0,.3);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: right;
+  cursor: pointer;
+}
+.fixed-cta img {
+  display: block;
+  margin: auto;
+}
+.js-float__none {
+  pointer-events: none;
+}
+.fixed-cta__close p {
+  padding-bottom: 2px;
+}
+.fixed-cta.is-show {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* PC */
+@media screen and (min-width: 641px) {
+  .fixed-cta {
+    position: fixed;
+    display: inline-block;
+    top: 10%;
+    bottom: auto;
+    right: 0;
+    padding: 4px 8px;
+    max-width: 120px;
+    width: 100%;
+    z-index: 10000;
+  }
+  .fixed-cta img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .fixed-cta__bnr {
+    box-shadow: none;
+  }
+  .is-show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+/*=================================================================
+  CTA volと同じスタイル
+=================================================================*/
+.cta .t3_v2_cta {
+  transform: translateX(5px);
+  width: 750px;
+  height: 1200px;
+  margin: 40px auto 20px auto;
+  position: relative; }
+  .cta .t3_v2_cta.h {
+    background: url(../img/bg_cta3_v2_h_pc.png) no-repeat top center / contain;
+  }
+  .cta .t3_v2_cta a {
+    position: absolute;
+    bottom: 26px;
+    left: 8%;
+    width: 80%; }
+  .cta .t1_v2_cta {
+    background: url(../img/bg_cta1_v2_pc.png) no-repeat center / contain;
+    width: 750px;
+    height: 108px;
+    margin: 30px auto 10px auto;
+    position: relative; }
+    .cta .t1_v2_cta a {
+      position: absolute;
+      top: 11px;
+      left: 410px;
+      margin-bottom: 10px; }
+
+  .cta .tujyo_v2 {
+    background: url(../img/bg_cta_tujyo_v2_pc.png) no-repeat top center / contain;
+    width: 750px;
+    height: 114px;
+    margin: 20px auto 50px auto;
+    position: relative; }
+    .cta .tujyo_v2 a {
+      position: absolute;
+      top: 12px;
+      left: 405px; }
+
+    .cta .omatome_info_v2 {
+      width: 750px;
+      margin: -40px auto 40px;
+    }
+     .jump-button {
+      width: 1000px;
+      margin: 0 auto;
+     }
+    .teiki_description {
+      width: 991px;
+      margin: 0 auto;
+    }
+
+@media screen and (max-width: 640px) {
+.cta .t3_v2_cta, .cta .t3_v3_cta {
+  transform: translateX(0px);
+  width: 98.5vw;
+  height: 188vw;
+  margin: 0 auto;
+  margin-bottom: 0.5vw;
+  position: relative; }
+.cta .t3_v4_cta {
+  transform: translateX(0px);
+  width: 98.5vw;
+  height: 111vw;
+  margin: 0 auto;
+  margin-bottom: 0.5vw;
+  position: relative; }
+  .cta .t3_v2_cta.h {
+    background: url(../img/bg_cta3_v2_h_sp.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+  }
+
+  .cta .t3_v2_cta a {
+    position: absolute;
+    bottom: 24px;
+    left: 55vw;
+    width: auto;
+    animation-name: scaling;
+    -moz-animation-name: scaling;
+    -webkit-animation-name: scaling;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+  }
+  .cta .t3_v2_cta.oyaken a {
+    position: absolute;
+    top: 90vw;
+    left: 5vw;
+    animation-name: scaling;
+    -moz-animation-name: scaling;
+    -webkit-animation-name: scaling;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+  }
+  .cta .t3_v2_cta.oyaken a img {
+    width: 89vw;
+  }
+  .cta .t3_v3_cta a {
+    position: absolute;
+    top: 45vw;
+    left: 3vw;
+    width: 43vw;
+    animation-name: scaling;
+    -moz-animation-name: scaling;
+    -webkit-animation-name: scaling;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+  }
+  .cta .t3_v4_cta a {
+    position: absolute;
+    top: 82vw;
+    left: 5vw;
+    width: 90vw;
+    animation-name: scaling;
+    -moz-animation-name: scaling;
+    -webkit-animation-name: scaling;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+  }
+  @keyframes scaling {
+    from {
+      transform: scale(1) translateY(0); }
+    to {
+      transform: scale(1.07) translateY(-4px); }
+  }
+  @-moz-keyframes scaling /* Firefox */ {
+    from {
+      -moz-transform: scale(1) translateY(0); }
+    to {
+      -moz-transform: scale(1.07) translateY(-4px); }
+    }
+  @-webkit-keyframes scaling /* Safari and Chrome */ {
+    from {
+      -webkit-transform: scale(1) translateY(0); }
+    to {
+      -webkit-transform: scale(1.07) translateY(-4px); }
+    }
+
+    .cta .t3_v2_cta a img {
+      width: 42vw; }
+
+.cta .t1_v2_cta {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  background: url(../img/bg_cta1_v2_sp.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  width: 97.5vw;
+  height: 20.8vw;
+  margin: 2vw auto 0vw auto;
+  position: relative; }
+  .cta .t1_v2_cta a {
+    position: absolute;
+    top: 1.9vw;
+    left: 54.2vw;
+    margin-bottom: 1.5px;
+    width: 42vw; }
+    .cta .t1_cta a img {
+      width: 47.3vw; }
+.cta .tujyo_v2 {
+  background: url(../img/bg_cta_tujyo_v2_sp.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100% auto;
+  width: 98.5vw;
+  height: 13.5vw;
+  margin: 10px auto 0;
+  position: relative; }
+  .cta .tujyo_v2 a {
+    position: absolute;
+    top: 1.5vw;
+    left: 55vw;
+    width: 41.7vw; }
+.cta .omatome_info_v2 {
+  width: 98.5vw;
+  margin: 0 auto;
+  }
+  .cta .omatome_info_v2 img.omatome_img {
+    margin: 0;
+  }
+}
+
+
+
+.offer-ask {
+border: 1px solid #999;
+border-radius: 10px;
+margin: 20px auto;
+padding: 16px 0;
+width: 980px; }
+.offer-ask dl {
+  margin-top: 16px;
+  text-align: center; }
+.offer-ask dt, .offer-ask dd {
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: top; }
+.offer-ask .offer-tel p {
+  margin-top: 10px;
+  padding-left: 60px;
+  text-align: left; }
+.offer-ask .offer-notes {
+  border: 1px solid #333;
+  font-size: 14px;
+  padding: 10px; }
+
+.offer-tel-col {
+margin: 20px auto;
+width: 98vw; }
+
+#cta .vol6_2_z {
+background: url(../img/offer_bg_pc.png) no-repeat center top;
+width: 1000px;
+height: 740px;
+margin: 0 auto;
+padding-top: 53px;
+padding-left: 60px;
+}
+#cta .vol6_2_z .offer-stit {
+margin-bottom: 50px;
+}
+#cta .vol6_2_z .book {
+margin-bottom: 20px;
+}
+#cta .vol6_2_z .btn {
+margin-bottom: 10px;
+width: 950px;
+}
+#cta .vol6_2_z ul li {
+font-size: 14px;
+line-height: 1.2;
+}

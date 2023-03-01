@@ -1,0 +1,108 @@
+
+<%
+const commonRootPath = '../../../../common/';
+const productRootPath = '../../';
+const commonComponentPath = `${commonRootPath}components/`;
+const productComponentPath = `${productRootPath}../components/`;
+%>
+<!DOCTYPE html>
+<html>
+<%- include(`${productComponentPath}_head`, {productRootPath, commonRootPath}) %>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="allernight2">
+
+    <!-- header -->
+
+<%- include(`${productComponentPath}_header`, {productRootPath, commonRootPath}) %>
+    <!-- /header -->
+
+
+    <main class="main">
+
+      <div id="fv" class="sho u-mgb-xl js-banner-hidden">
+        <div class="inner">
+        </div>
+      </div>
+      <!-- お知らせ掲載 -->
+      <%- include(`${commonComponentPath}_common_oshirase`, {commonRootPath, productRootPath}) %>
+      <!-- /お知らせ掲載 -->
+
+      <div class="center_contents js-float__open">
+        <div class="js-banner-hidden ">
+          <picture>
+            <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_01_pc.png">
+            <img src="<%= productRootPath %>img/interview_sho_01_sp.png" alt=""/>
+          </picture>
+          <!-- 01 -->
+          <picture>
+            <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_02_only_pc.png">
+            <img src="<%= productRootPath %>img/interview_sho_02_only_sp.png" alt=""/>
+          </picture>
+          <!-- 02 -->
+          <img src="<%= productRootPath %>img/interview_sho_04_pc.png" alt="" class="pc"/>
+          <!-- 04 -->
+          <picture>
+            <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_05_pc.png">
+            <img src="<%= productRootPath %>img/interview_sho_05_sp.png" alt=""/>
+          </picture>
+          <!-- 05 -->
+          <picture>
+            <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_06_pc.png">
+            <img src="<%= productRootPath %>img/interview_sho_06_sp.png" alt=""/>
+          </picture>
+        </div>
+        <!-- 06 -->
+        <picture id="banner-appear-target01">
+          <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_07_pc.png">
+          <img src="<%= productRootPath %>img/interview_sho_07_sp.png" alt=""/>
+        </picture>
+        <!-- 07 -->
+        <img src="<%= productRootPath %>img/interview_sho_08_sp.png" alt="" class="sp"/>
+        <!-- 08 -->
+      </div>
+
+      <%- include(`${productComponentPath}_nayami`, {productRootPath, commonRootPath}) %>
+      <%- include(`${productComponentPath}_change`, {productRootPath, commonRootPath}) %>
+      <%- include(`${productComponentPath}_drink`, {productRootPath, commonRootPath}) %>
+
+      <!-- CTA01 -->
+      <section id="cta_01" class="cta js-float__close js-banner-hidden">
+        <%- include(`${productComponentPath}_cta`, {productRootPath, commonRootPath}) %>
+      </section>
+      <!-- /CTA01 -->
+
+      <%- include(`${productComponentPath}_component`, {productRootPath, commonRootPath}) %>
+
+      <%- include(`${productComponentPath}_review`, {productRootPath, commonRootPath}) %>
+
+      <%- include(`${productComponentPath}_pleasure`, {productRootPath, commonRootPath}) %>
+
+      <!-- CTA02 -->
+      <section id="cta_02" class="cta js-float__close js-banner-hidden">
+        <%- include(`${productComponentPath}_cta`, {productRootPath, commonRootPath}) %>
+      </section>
+      <!-- /CTA02 -->
+
+    <div class="js-float__open">
+      <%- include(`${productComponentPath}_call`, {productRootPath, commonRootPath}) %>
+    </div>
+
+
+     <%- include(`${productComponentPath}_faq`, {productRootPath, commonRootPath}) %>
+
+      <%- include(`${productComponentPath}_guide`, {productRootPath, commonRootPath}) %>
+    </main>
+
+    <%- include(`${commonComponentPath}_common_footer`, {productRootPath, commonRootPath}) %>
+    <%- include(`${productComponentPath}_fixed_banner`, {productRootPath, commonRootPath}) %>
+<!-- footer -->
+
+  </div>
+
+</body>
+</html>

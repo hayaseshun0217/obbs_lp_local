@@ -1,0 +1,114 @@
+<%
+  const commonRootPath = '../../../../common/';
+  const productRootPath = './';
+  const commonComponentPath = `${commonRootPath}components/`;
+  const productComponentPath = `${productRootPath}../components/`;
+%>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>［あなたの【やってみたい】を応援させてください！］カナコトチャレンジプロジェクト</title>
+   <meta name="description" content="カナコトチャレンジページとは、プロフィギュアスケーター村上佳菜子さんが、自身でも悩んできた
+アトピー経験を生かして、あなたの「やってみたい」を全力で応援するプロジェクトです。あなたの【やってみたい】を応援させてください！">
+ <meta property="og:image" content="https://bio-prd-public.s3.ap-northeast-1.amazonaws.com/lp/campaign/kanako-challenge/img/tw_banner.png">
+  <meta property="og:description" content="Tカナコトチャレンジページとは、プロフィギュアスケーター村上佳菜子さんが、自身でも悩んできた
+アトピー経験を生かして、あなたの「やってみたい」を全力で応援するプロジェクトです。あなたの【やってみたい】を応援させてください！">
+  <meta property="og:title" content="［あなたの【やってみたい】を応援させてください！］カナコトチャレンジプロジェクト">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="<%= productRootPath %>css/reset.css">
+  <link rel="stylesheet" href="<%= productRootPath %>css/style.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PH4SDD');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<%#- include(`${productComponentPath}_head`, {productRootPath, commonRootPath}) %>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="base yoko">
+
+      <h1>【応募要項】<br><span>※必ずお読みください。</span></h1>
+
+      <div class="description">
+        当キャンペーンの応募者は、当キャンペーンに応募された時点で、当キャンペーン応募要項に記載されている諸条件に同意したものとみなされます。本キャンペーン要項に記載されている諸条件をよくお読みになったうえでご応募くださいますよう、お願いいたします。
+      </div>
+
+      <h2>応募手順</h2>
+
+      <ul>
+        <li>①本キャンペーン要項をご確認ください</li>
+        <li>②了承いただけましたら、「今すぐ応募する」ボタンをクリックしてください。<br>専用応募フォームが立ち上がります。</li>
+        <li>③専用応募フォームに必要事項を入力いただき、送信してください。<br>※キャンペーン要項の内容に同意いただける方のみご応募いただけます。</li>
+        <li>④当事務局から「応募受付完了メール」が届きます。</li>
+      </ul>
+
+      <h2>応募期間</h2>
+      <ul>
+        <li>2021年４月23日(金)～2021年5月10日(月)</li>
+      </ul>
+
+      <h2>【応募資格】</h2>
+
+      <ul>
+        <li>日本国内の在住の方でアトピー性皮膚炎でお悩みの方</li>
+        <li>応募規約に同意していただいた方</li>
+        <li>公開されたツイッターアカウントをお持ちの方　※非公開アカウントは不可となります</li>
+        <li>未成年等の方がご応募いただく場合は、応募にあたり親権者等の法廷代理人の同意を得た上で応募してください</li>
+      </ul>
+
+      <h2>【注意事項】</h2>
+
+      <ul>
+        <li>応募いただくにあたり、添付いただく写真は応募者本人のものに限ります。ご本人以外の写真で応募された場合は当選対象外とさせていただくとともに、オリエンタルバイオは写真に写った方そのほか第三者と応募者の間に生じる紛争等について一切その責任を負いません。</li>
+        <li>応募に要する費用は全て応募者の負担とします。</li>
+        <li>当選については、キャンペーン事務局が定める方法によって決定するものとし、当選の有無に関するメール・お電話でのお問い合わせにつきましては一切お受け致しません。</li>
+        <li>応募に際し不正行為がある場合（必要事項の記入漏れや虚偽がある場合、当キャンペーン要項に反する行為を行った場合など）、オリエンタルバイオが不適切であると判断した場合は当選を取り消しさせていただくことがあります。</li>
+        <li>スマイルチェンジ賞に当選された方については、村上佳菜子さんが約3か月応援するにあたり、応援プロジェクトを実施中の、写真・映像等についてオリエンタルバイオのWEBサイトや情報誌やSNS、テレビCM等にて公開させていただく可能性があります。</li>
+        <li>トライアルチャンス賞に当選された方ついては、1か月間の商品モニターをお願いいたします。1か月モニター後アンケート回答にてイベント終了とさせていただきます。
+また、モニター期間中の写真や内容については、オリエンタルバイオのWＥＢサイトや情報誌、SNS、テレビCM等にて公開させていただく可能性があります。</li>
+        <li>・当選の権利及び当選賞品の換金、譲渡はできません。またオークション等の出品もご遠慮ください。なお、当選が取り消された場合、オリエンタルバイオは当選者に対し、賞品等の返還を求めることができるものとします。</li>
+        <li>当キャンペーンへのご応募にあたり、応募者はキャンペーン事務局の運営方針に従っていただくものとし、その運営方法については一切異議を申し立てないものとします。</li>
+        <li>当キャンペーンへのご応募にあたり、応募者が損害を被った場合においてもオリエンタルバイオに故意または過失のある場合を除き、オリエンタルバイオは一切その責任を負いません。</li>
+        <li>応募に関する一切の事項は、日本法に準拠し、日本法に従って解釈されるものとし、応募要項への同意にもかかわらず応募に関して紛争が生じた場合には、東京地方裁判所を専属的合意管轄裁判所とすることをご了承いただきます。</li>
+        <li>当キャンペーンの応募者は、暴力団、暴力団関係企業・団体その他反社会的勢力（以下「反社会的勢力」という）に属さないこと、反社会的勢力の支配・影響を受けていないことをオリエンタルバイオに保証するものとします。</li>
+        <li>当キャンペーン要項に定めない事項に関しては、キャンペーン事務局の判断により最終決定させていただきます。</li>
+      </ul>
+
+      <h2>当選賞品</h2>
+
+      <h3>スマイルチェンジ賞　3名　</h3>
+      <div class="description">村上佳菜子さんチェレンジ応援チケット＋アレルナイトプラスモニター(チャレンジ期間中分)</div>
+
+      <h3>トライアルチャンス賞　22名</h3>
+      <p>アレルナイトプラス簡単モニター(約1か月分)</p><br>
+
+      <h2>当選発表予定日</h2>
+      <div class="description">アンケートを拝見させていただき、厳選なる選考をさせていただきます。<br>2021年5月17日頃<br>※応募時のご住所に記載不備の場合、商品のお届けができない場合がございます。</div>
+
+      <h2>個人情報の取り扱いについて</h2>
+      <div class="description">
+        当キャンペーン応募に際して、応募者より任意でご提供いただいた個人情報は、オリエンタルバイオが厳重に管理し、応募者の連絡、当選通知、賞品送付等、当キャンペーン運営のために必要な範囲内で利用させていただきます。応募者の個人情報を応募者の同意なしに第三者に開示・提示することはありません。<br>(法令法により開示を求められた場合を除く)<br>その他、個人情報の取り扱いについてはオリエンタルバイオの「<a href="<%= corporateURL %>privacy">プライバシーポリシー</a>」をご参照ください。</div>
+    </div>
+
+    <div class="footer">
+      <p><a href="<%= corporateURL %>"><img src="<%= productRootPath %>img/logo.png" alt=""/></a></p>
+    </div>
+
+  </body>
+</html>

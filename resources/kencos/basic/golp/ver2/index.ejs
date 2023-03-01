@@ -1,0 +1,477 @@
+<% 
+  const commonRootPath = '../../../../common/';
+  const productRootPath = '../../';
+  const commonComponentPath = `${commonRootPath}components/`;
+  const productComponentPath = `${productRootPath}../components/`;
+  const ogpData = {
+    url: 'basic/golp/ver2',
+    title: '',
+    description: '',
+    siteName: '',
+    image: ''
+  }
+%> 
+<!DOCTYPE html>
+<html>
+<%- include(`${productComponentPath}_head`, {commonRootPath, productRootPath, ogpData}) %>
+<body>
+  <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="kencos">
+
+<%- include(`${productComponentPath}_header`, {commonRootPath, productRootPath}) %>
+
+    <!-- main -->
+    <main class="main">
+      <section id="fv-c">
+        <div class="wrapper">
+          <h2>
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/tit_fv_h2_taka_pc.png?1"><!--/pc-->
+              <img src="<%= productRootPath %>img/tit_fv_h2_taka_sp.jpg?1" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+            </picture>
+          </h2>
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#fv-c -->
+
+      <section class="health">
+        <picture>
+          <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_arrow_tobollet_pc.png"><!--/pc-->
+          <img src="<%= productRootPath %>img/img_arrow_tobollet_sp.png" alt=""><!--/sp-->
+        </picture>
+        <picture>
+          <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/bollet_pc.png"><!--/pc-->
+          <img src="<%= productRootPath %>img/bollet_sp.png" alt=""><!--/sp-->
+        </picture>
+        <picture>
+          <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/healthmark_pc.png"><!--/pc-->
+          <img src="<%= productRootPath %>img/healthmark_sp.png" alt=""><!--/sp-->
+        </picture>
+      </section>
+        <!--/health-->
+
+      <section id="stakit-c" class="crt01">
+        <div class="wrapper">
+          <h2>
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/tit_stakit_h2_pc.jpg"><!--/pc-->
+              <img src="<%= productRootPath %>img/tit_stakit_h2_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+            </picture>
+          </h2>
+          <div class="inner">
+            <div class="stakit_c_img">
+              <div class="stakit_c_c5c">
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_stakit_c5c_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_stakit_c5c_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+                </picture>
+              </div>
+              <div class="stakit_c_setp">
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_stakit_set_assort_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_stakit_setp_assort_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+                </picture>
+              </div>
+              <!--/stakit_c_setp-->
+            </div>
+            <!--/stakit_c_img-->
+
+            <div class="stakit_c_cta">
+              <form action="/cart/set" id="cart_form">
+
+                <div class="btn">
+                  <p class="txt">※お電話での注文のみ分割払いがご利用いただけます。</p>
+                  <div class="btn_tel_w">
+                    <p class="btn_tel">
+                      <a href="tel:0120237600" class="ebis_button_trigger" data-cid="2JbemGXQ" data-pid="clickcv_sp_kencoslp">0120-237-600</a>
+                    </p>
+                  </div><!--/btn_tel_w-->
+                </div>
+
+                <div class="sel">
+                  <div class="sel_color">
+                    <p class="txt-label">カラー</p>
+                    <select name="color">
+                      <option value="K41">シャンパンゴールド</option>
+                      <option value="K42">ブラック</option>
+                      <option value="K43">ネイビー</option>
+                      <option value="K44">ホワイト</option>
+                      <option value="K45">ピンク</option>
+                    </select>
+                  </div>
+                  <!--/sel_color-->
+                  <div class="sel_flavor">
+                    <p class="txt-label">フレーバー</p>
+                    <select name="flavor">
+                      <option value="KF01">ビタミンレモン</option>
+                      <option value="KF02">キシリトールメンソール</option>
+                      <option value="KF03">カテキングリーン</option>
+                      <option value="KF04">フレーバーカートリッジアソート</option>
+                    </select>
+                  </div>
+                  <!--/sel_flavor-->
+                  <div class="sel_number">
+                    <p class="txt-label">数量</p>
+                    <select name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <!--/sel_number-->
+                </div>
+                <div class="btn">
+                  <p class="btn_cart">
+                    <input type="submit" name="submit1" value="カートに入れる">
+                  </p>
+                </div>
+                <!--/btn-->
+                <!--button type="submit" name="submit">カートに入れる</button-->
+              </form>
+            </div>
+            <!--/stakit_c_cta-->
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#cta -->
+
+      <section id="rec_c">
+        <div class="wrapper" style="padding-bottom: 0;">
+          <div class="inner">
+            <h2>
+              <picture>
+                <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/tit_fv_h2_2_pc.jpg"><!--/pc-->
+                <img src="<%= productRootPath %>img/tit_fv_h2_2_sp.jpg"><!--/sp-->
+              </picture>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- /#rec_c -->
+
+
+
+      <section id="ci_c">
+        <div class="wrapper taka">
+          <h3>
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/tit_ci_h3_long_pc.png"><!--/pc-->
+              <img src="<%= productRootPath %>img/tit_ci_h3_long_sp.jpg" alt="著名人インタビュー"><!--/sp-->
+            </picture>
+          </h3>
+          <div class="inner">
+            <ul>
+              <li class="reason">
+                <p class="img-txt">
+                  <picture>
+                    <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/txt_ci_reason_pc.png"><!--/pc-->
+                    <img src="<%= productRootPath %>img/txt_ci_reason_sp.png" alt="漫才界の大御所、オール阪神さんもKENCOS4のご愛用者。実はそれには、理由がありました。"><!--/sp-->
+                  </picture>
+                </p>
+                <div class="arrow-area">
+                  <p>自分は大丈夫やな・・と思ったんですよ。ところが、60歳超えたくらいから、やっぱりちょっと異変があるなって・・<br>もうみんなそうやと思いますわ。60超えたら・・あかん。</p>
+                </div>
+              </li>
+              <!--/reason-->
+              <li class="pinch">
+                <p class="img-txt">
+                  <picture>
+                    <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/txt_ci_pinch_pc.png"><!--/pc-->
+                    <img src="<%= productRootPath %>img/txt_ci_pinch_sp.png" alt="漫才コンビ、オール阪神といえば、数々の賞を受賞してきた上方漫才界のスーパースター。ところが、そんな阪神さんに人生最大のピンチが。"><!--/sp-->
+                  </picture>
+                </p>
+                <div class="arrow-area">
+                  <p>脳梗塞です。<br><br>オール阪神、脳梗塞。それは、メディアでも大きくとりあげられました。<br><br>いやもう、動いたらあかんて。10日間絶対安静。<br>「ひょっとしたらしゃべれるようになりますから」って言われたんですけどね。<br>えらいこっちゃ、喋れんと漫才できひんなぁと思いながら、自分独りで、早口言葉やないけども、喋れるな、喋れるな、と思いながらずぅっと。</p>
+                </div>
+              </li>
+              <!--/pinch-->
+              <li class="recovery">
+                <p class="img-txt">
+                  <picture>
+                    <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/txt_ci_recovery_pc.png"><!--/pc-->
+                    <img src="<%= productRootPath %>img/txt_ci_recovery_sp.png" alt="幸い、病状は軽く退院してからも治療と適度な運動や食事療法を行ったことで医師からは「問題ない」と言われるほどに回復。ところが・・・"><!--/sp-->
+                  </picture>
+                </p>
+                <div class="arrow-area">
+                  <p>脳梗塞になって、とりあえずお医者さんから「まずはタバコ止めて下さい。」血管をぎゅ～っと縮小する作用があるからタバコは吸うたらダメですよって。わかりました。タバコは止めます。そこでそういう風にお誓いはしましたよ。<br>しましたけど、やっぱり心の中では・・<br>「吸いたいなぁ～」</p>
+                </div>
+              </li>
+              <!--/recovery-->
+              <li class="fight">
+                <p class="img-txt">
+                  <picture>
+                    <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/txt_ci_fight_pc.png"><!--/pc-->
+                    <img src="<%= productRootPath %>img/txt_ci_fight_sp.png" alt="実は、かなりのヘビースモーカーだった、阪神さん。（喫煙歴40年以上、一日40本以上）辛い闘いが始まりました。"><!--/sp-->
+                  </picture>
+                </p>
+                <div class="arrow-area">
+                  <p>もう煙が出るだけでもいい・・タバコとちゃうかってもええ・・<br>ニコチン、タール入ってなかってもええ・・<br>タバコみたいな感じのもんが・・</p>
+                </div>
+              </li>
+              <!--/fight-->
+              <li class="meet">
+                <p class="img-txt">
+                  <picture>
+                    <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/txt_ci_meet_pc.png"><!--/pc-->
+                    <img src="<%= productRootPath %>img/txt_ci_meet_sp.png" alt="そんなとき、KENCOSとの出会いがありました。"><!--/sp-->
+                  </picture>
+                </p>
+                <div class="arrow-area">
+                  <p>「煙」出てるでしょ？<br>ほな、これいいじゃないですか。<br>タバコ吸ってる気分になって、こう吸いながら<br>で、健康にもいい。害が無いと言うか。<br>私は健康にならなあかんのです。<br>水素というのは今ものすごい注目されてて、カラダにいいじゃないですか・・<br>いやもう、時代が変ってきたん違います？</p>
+                </div>
+              </li>
+              <!--/meet-->
+            </ul>
+            <div class="img_area">
+              <picture>
+                <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_ci_hydDrink_pc.png"><!--/pc-->
+                <img src="<%= productRootPath %>img/img_ci_hydDrink_sp.jpg" alt=""><!--/sp-->
+              </picture>
+            </div>
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#ci_c -->
+
+      <section id="stakit-c" class="crt02">
+        <div class="wrapper">
+          <h2>
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/tit_stakit_h2_pc.jpg"><!--/pc-->
+              <img src="<%= productRootPath %>img/tit_stakit_h2_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+            </picture>
+          </h2>
+          <div class="inner">
+            <div class="stakit_c_img">
+              <div class="stakit_c_c5c">
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_stakit_c5c_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_stakit_c5c_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+                </picture>
+              </div>
+              <div class="stakit_c_setp">
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_stakit_set_assort_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_stakit_setp_assort_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+                </picture>
+              </div>
+              <!--/stakit_c_setp-->
+            </div>
+            <!--/stakit_c_img-->
+
+            <div class="stakit_c_cta">
+              <form action="/cart/set" id="cart_form2">
+
+                <div class="btn">
+                  <p class="txt">※お電話での注文のみ分割払いがご利用いただけます。</p>
+                  <div class="btn_tel_w">
+                    <p class="btn_tel">
+                      <a href="tel:0120237600" class="ebis_button_trigger" data-cid="2JbemGXQ" data-pid="clickcv_sp_kencoslp">0120-237-600</a>
+                    </p>
+                  </div><!--/btn_tel_w-->
+                </div>
+
+                <div class="sel">
+                  <div class="sel_color">
+                    <p class="txt-label">カラー</p>
+                    <select name="color">
+                      <option value="K41">シャンパンゴールド</option>
+                      <option value="K42">ブラック</option>
+                      <option value="K43">ネイビー</option>
+                      <option value="K44">ホワイト</option>
+                      <option value="K45">ピンク</option>
+                    </select>
+                  </div>
+                  <!--/sel_color-->
+                  <div class="sel_flavor">
+                    <p class="txt-label">フレーバー</p>
+                    <select name="flavor">
+                      <option value="KF01">ビタミンレモン</option>
+                      <option value="KF02">キシリトールメンソール</option>
+                      <option value="KF03">カテキングリーン</option>
+                      <option value="KF04">フレーバーカートリッジアソート</option>
+                    </select>
+                  </div>
+                  <!--/sel_flavor-->
+                  <div class="sel_number">
+                    <p class="txt-label">数量</p>
+                    <select name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <!--/sel_number-->
+                </div>
+                <div class="btn">
+                  <p class="btn_cart">
+                    <input type="submit" name="submit2" value="カートに入れる">
+                  </p>
+                </div>
+                <!--/btn-->
+                <!--button type="submit" name="submit">カートに入れる</button-->
+              </form>
+            </div>
+            <!--/stakit_c_cta-->
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#cta -->
+      <section id="fla_c">
+        <div class="wrapper">
+          <h3>
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/tit_fla_pc.jpg"><!--/pc-->
+              <img src="<%= productRootPath %>img/tit_fla_sp.jpg" alt="楽しさ広がる3種のフレーバー"><!--/sp-->
+            </picture>
+          </h3>
+          <div class="inner">
+            <ul class="img_area">
+              <li>
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_fla_vitamin_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_fla_vitamin_sp.jpg" alt=""><!--/sp-->
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_fla_catechin_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_fla_catechin_sp.jpg" alt=""><!--/sp-->
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_fla_xylitol_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_fla_xylitol_sp.jpg" alt=""><!--/sp-->
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_fla_assort_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_fla_assort_sp.jpg" alt=""><!--/sp-->
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#cta -->
+      <section id="stakit-c" class="crt03">
+        <div class="wrapper">
+          <h2>
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/tit_stakit_h2_pc.jpg"><!--/pc-->
+              <img src="<%= productRootPath %>img/tit_stakit_h2_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+            </picture>
+          </h2>
+          <div class="inner">
+            <div class="stakit_c_img">
+              <div class="stakit_c_c5c">
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_stakit_c5c_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_stakit_c5c_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+                </picture>
+              </div>
+              <div class="stakit_c_setp">
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/img_stakit_set_assort_pc.jpg"><!--/pc-->
+                  <img src="<%= productRootPath %>img/img_stakit_setp_assort_sp.jpg" alt="健康を「吸う」という新しい習慣。"><!--/sp-->
+                </picture>
+              </div>
+              <!--/stakit_c_setp-->
+            </div>
+            <!--/stakit_c_img-->
+
+            <div class="stakit_c_cta">
+              <form action="/cart/set" id="cart_form3">
+
+                <div class="btn">
+                  <p class="txt">※お電話での注文のみ分割払いがご利用いただけます。</p>
+                  <div class="btn_tel_w">
+                    <p class="btn_tel">
+                      <a href="tel:0120237600" class="ebis_button_trigger" data-cid="2JbemGXQ" data-pid="clickcv_sp_kencoslp">0120-237-600</a>
+                    </p>
+                  </div><!--/btn_tel_w-->
+                </div>
+
+                <div class="sel">
+                  <div class="sel_color">
+                    <p class="txt-label">カラー</p>
+                    <select name="color">
+                      <option value="K41">シャンパンゴールド</option>
+                      <option value="K42">ブラック</option>
+                      <option value="K43">ネイビー</option>
+                      <option value="K44">ホワイト</option>
+                      <option value="K45">ピンク</option>
+                    </select>
+                  </div>
+                  <!--/sel_color-->
+                  <div class="sel_flavor">
+                    <p class="txt-label">フレーバー</p>
+                    <select name="flavor">
+                      <option value="KF01">ビタミンレモン</option>
+                      <option value="KF02">キシリトールメンソール</option>
+                      <option value="KF03">カテキングリーン</option>
+                      <option value="KF04">フレーバーカートリッジアソート</option>
+                    </select>
+                  </div>
+                  <!--/sel_flavor-->
+                  <div class="sel_number">
+                    <p class="txt-label">数量</p>
+                    <select name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <!--/sel_number-->
+                </div>
+                <div class="btn">
+                  <p class="btn_cart">
+                    <input type="submit" name="submit3" value="カートに入れる">
+                  </p>
+                </div>
+                <!--/btn-->
+                <!--button type="submit" name="submit">カートに入れる</button-->
+              </form>
+            </div>
+            <!--/stakit_c_cta-->
+          </div>
+          <!--/inner-->
+        </div>
+        <!--/wrapper-->
+      </section>
+      <!-- /#cta -->
+      <section id="contact">
+        <div class="inner">
+          <h2> <img class="js-res_img" src="https://bio-prd-public.s3.ap-northeast-1.amazonaws.com/lp/raffineealpha/img/contact_tit_pc.png" alt="お電話でのご注文・ご質問もお気軽にお問合せ下さい"> </h2>
+          <p class="fon22">「ご注文窓口」は、専任スタッフが<br class="sp">お客様の<br class="pc tab">ご要望・ご質問に丁寧に<br class="sp">お応えいたします。</p>
+          <p><img class="js-res_img" src="https://bio-prd-public.s3.ap-northeast-1.amazonaws.com/lp/raffineealpha/img/contact_tel_pc.png" alt=""></p>
+          <div class="aligncenter"> 年中無休、<strong>9時～18時半</strong>で対応しております。<br>お気軽にご利用くださいませ。 </div>
+        </div>
+        <!--/inner-->
+      </section>
+      <!--/#contact-->
+        <%- include(`${productComponentPath}_info`, {commonRootPath, productRootPath}) %>
+        <div class="inner">
+        <%- include(`${commonComponentPath}_common_oshirase`, {commonRootPath, productRootPath}) %>
+        </div>
+      <!--/#info-->
+    </main>
+    <!-- /main -->
+  </div>
+  <!-- /kencos -->
+<%- include(`${commonComponentPath}_common_footer`, {commonRootPath, productRootPath}) %> 
+  </div>
+  <!--/kencos-->
+<script src="../../js/script.js"></script>
+
+</body>

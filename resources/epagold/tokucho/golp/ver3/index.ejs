@@ -1,0 +1,129 @@
+<%
+  const commonRootPath = '../../../../common/';
+  const productRootPath = '../../';
+  const commonComponentPath = `${commonRootPath}components/`;
+  const productComponentPath = `${productRootPath}../components/`;
+%>
+<!DOCTYPE html>
+<html>
+<%- include(`${productComponentPath}tokucho/_head`, {commonRootPath, productRootPath}) %>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+    <div class="epagold2">
+
+      <!-- header -->
+<%- include(`${productComponentPath}_header`, {commonRootPath, productRootPath}) %>
+      <!-- /header -->
+
+      <main class="main">
+
+        <section id="firstview" class="google pc">
+          <div id="fv"></div>
+        </section>
+
+        <section id="firstview" class="row sp">
+          <div id="fv"></div>
+        </section>
+
+        <!-- お知らせ掲載 -->
+        <%- include(`${commonComponentPath}_common_oshirase`, {commonRootPath, productRootPath}) %>
+        <!-- /お知らせ掲載 -->
+
+        <%- include(`${productComponentPath}_uservoice`, {commonRootPath, productRootPath}) %>
+
+        <%- include(`${productComponentPath}_intro`, {commonRootPath, productRootPath}) %>
+
+        <section id="recommend">
+          <h2 class="aligncenter"><img class="js-res_img" src="<%= productRootPath %>img/recommend_tit_pc.png"
+              alt="そこでオススメなのが、小林式EPAを配合したサプリメント">
+          </h2>
+          <div class="inner">
+            <p class="img01 aligncenter"><img class="js-res_img" src="<%= productRootPath %>img/recommend_txt_01_pc.png"
+                alt="特許…小林式EPAを配合、吸収サポート7成分を配合"></p>
+            <p class="alignright fon16">※1 特許番号5186679　※2 特許番号5504405</p>
+            <p class="aligncenter"><img class="js-res_img" src="<%= productRootPath %>img/recommend_txt_02_pc.png"
+                alt="ラフィーネエパゴールド"></p>
+            <!-- <p class="aligncenter btn"><a href="#postin"><img class="js-res_img" src="<%= productRootPath %>img/recommend_btn_pc.png" alt="特許成分「小林式EPA」を今すぐ実感する!"></a></p> -->
+            <p class="aligncenter btn"><a href="#cta" class="ga__epa_g1_tocta_01"><img class="js-res_img"
+                  src="<%= productRootPath %>img/recommend_btn_pc.png" alt="特許成分「小林式EPA」を今すぐ実感する!"></a></p>
+          </div>
+        </section>
+
+        <%- include(`${productComponentPath}_feature`, {commonRootPath, productRootPath}) %>
+
+        <%- include(`${productComponentPath}_factory`, {commonRootPath, productRootPath}) %>
+        <%- include(`${productComponentPath}_broken`, {commonRootPath, productRootPath}) %>
+        <section id="item">
+          <h2 class="aligncenter"><img class="js-res_img" src="<%= productRootPath %>img/item_tit_pc.png"
+              alt="小林式EPA配合エパゴールド"></h2>
+          <div class="wid850 clearfix">
+            <div class="alignright">
+              <img class="js-res_img" src="<%= productRootPath %>img/item_txt_01_pc.png" alt="特許…小林式EPAを配合、吸収サポート7成分を配合">
+              <p class="fon16">※1特許番号5186679　※2特許番号5504405</p>
+            </div>
+            <p class="aligncenter"><img class="js-res_img" src="<%= productRootPath %>img/item_txt_02_pc.png" alt="そこで">
+            </p>
+          </div>
+        </section>
+
+        <%- include(`${productComponentPath}_pleasure`, {commonRootPath, productRootPath}) %>
+
+         <%- include(`${productComponentPath}_repeat`, {commonRootPath, productRootPath}) %>
+
+         <div class="cta_set aligncenter">
+          <!--定期600CTA  -->
+          <%- include(`${productComponentPath}_cta_600_teiki`, {commonRootPath, productRootPath}) %>
+          <!--/定期600CTA  -->
+          <!--定期300CTA  -->
+          <%- include(`${productComponentPath}_cta_300_teiki`, {commonRootPath, productRootPath}) %>
+          <!--/定期300CTA  -->
+          <!--定期小粒CTA  -->
+          <%- include(`${productComponentPath}_cta_small_teiki1`, {commonRootPath, productRootPath}) %>
+          <!--/定期小粒CTA  -->
+
+          <div class="cta_box_normal cta_box-tsujo">
+            <img src="<%= productRootPath %>../common/img/cta_tsujo.png" alt="">
+            <!--通常600CTA  -->
+            <%- include(`${productComponentPath}_cta_600_tsujo`, {commonRootPath, productRootPath}) %>
+            <!--/通常600CTA  -->
+            <!--通常300CTA  -->
+            <%- include(`${productComponentPath}_cta_300_tsujo`, {commonRootPath, productRootPath}) %>
+            <!--/通常300CTA  -->
+            <!--通常小粒CTA  -->
+            <%- include(`${productComponentPath}_cta_small_tsujo`, {commonRootPath, productRootPath}) %>
+            <!--/通常小粒CTA  -->
+          </div>
+        </div>
+        <!-- /.cta_set -->
+
+          <%- include(`${productComponentPath}_call`, {commonRootPath, productRootPath}) %>
+
+        <div id="faq">
+          <h2 class="aligncenter pc"><span><img class="js-res_img" src="<%= productRootPath %>img/faq_tit_pc.png"
+                alt="携帯・PHSからもご利用頂けます"></span>
+          </h2>
+          <h2 class="aligncenter sp"><span><img class="js-res_img" src="<%= productRootPath %>img/faq_tit_sp.png"
+                alt="携帯・PHSからもご利用頂けます"></span>
+          </h2>
+            <%- include(`${productComponentPath}_faq`, {commonRootPath, productRootPath}) %>
+        </div>
+
+       <%- include(`${productComponentPath}_materials`, {commonRootPath, productRootPath}) %>
+
+          <%- include(`${productComponentPath}_guide`, {commonRootPath, productRootPath}) %>
+
+      </main>
+
+<%- include(`${commonComponentPath}_common_footer`, {commonRootPath, productRootPath}) %>
+
+<%- include(`${productComponentPath}_fixedTel`, {commonRootPath, productRootPath}) %>
+
+
+  	</body>
+</html>

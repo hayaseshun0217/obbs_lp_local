@@ -1,0 +1,158 @@
+<% const commonRootPath='../../../../common/' ; const productRootPath='../../' ; const
+  commonComponentPath=`${commonRootPath}components/`; const productComponentPath=`${productRootPath}../components/`; %>
+  <!DOCTYPE html>
+  <html>
+  <%- include(`${productComponentPath}_head`, {productRootPath, commonRootPath}) %>
+
+    <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <div class="allernight2">
+
+        <!-- header -->
+
+        <%- include(`${productComponentPath}_header`, {productRootPath, commonRootPath}) %>
+          <!-- /header -->
+
+
+          <main class="main">
+            <div class="">
+              <div id="fv" class="sho">
+                <div class="inner">
+                </div>
+              </div>
+              <!-- 顧客満足度・販売実績 -->
+              <%- include(`${productComponentPath}_authority`, {productRootPath, commonRootPath}) %>
+                <!-- /顧客満足度・販売実績 -->
+            </div>
+                  <!-- お知らせ掲載 -->
+      <%- include(`${commonComponentPath}_common_oshirase`, {commonRootPath, productRootPath}) %>
+      <!-- /お知らせ掲載 -->
+            <div class="center_contents js-float__open">
+              <div class="js-banner-hidden">
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_01_pc.png">
+                  <img src="<%= productRootPath %>img/interview_sho_01_sp.png" alt="" />
+                </picture>
+                <!-- 01 -->
+                <picture>
+                  <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_02_only_pc.png">
+                  <img src="<%= productRootPath %>img/interview_sho_02_only_sp.png" alt="" />
+                </picture>
+                <!-- 02 -->
+                <img src="<%= productRootPath %>img/interview_sho_04_pc.png" alt="" class="pc" />
+                <!-- 04 -->
+                <div id="banner-appear-target01">
+                  <img src="<%= productRootPath %>img/interview_sho_05_pc.png" alt="" class="pc" />
+                  <img src="<%= productRootPath %>img/interview_sho_05_sp.png" alt="" class="sp" />
+                </div>
+              </div>
+              <!-- 05 -->
+              <img src="<%= productRootPath %>img/interview_sho_06_pc.png" alt="" class="pc" />
+              <img src="<%= productRootPath %>img/interview_sho_06_sp.png" alt="" class="sp" />
+              <!-- 06 -->
+              <img src="<%= productRootPath %>img/interview_sho_07_pc.png" alt="" class="pc" />
+              <img src="<%= productRootPath %>img/interview_sho_07_sp.png" alt="" class="sp" />
+              <!-- 07 -->
+              <img src="<%= productRootPath %>img/interview_sho_08_sp.png" alt="" class="sp" />
+              <!-- 08 -->
+            </div>
+
+            <!-- CTA01 -->
+            <section id="cta_01" class="cta js-float__close js-banner-hidden">
+              <%- include(`${productComponentPath}_cta`, {productRootPath, commonRootPath}) %>
+            </section>
+            <!-- /CTA01 -->
+
+              <div class="u-mgb-xl"></div>
+
+              <!-- お悩み -->
+              <%- include(`${productComponentPath}_nayami3`, {productRootPath, commonRootPath}) %>
+                <!-- /お悩み -->
+
+                <!-- 1800人の声から生まれた 開発秘話 -->
+                <%- include(`${productComponentPath}_review2`, {productRootPath, commonRootPath}) %>
+                  <!-- /1800人の声から生まれた 開発秘話 -->
+
+                  <!-- 飲んで中からケア -->
+                  <%- include(`${productComponentPath}_innercare`, {productRootPath, commonRootPath}) %>
+                    <!-- /飲んで中からケア -->
+                    <div class="u-mgb-l"></div>
+                    <!-- 3つのアプローチ -->
+                    <%- include(`${productComponentPath}_approach`, {productRootPath, commonRootPath}) %>
+                      <!-- /3つのアプローチ -->
+
+                      <!-- 飲み方 -->
+                      <%- include(`${productComponentPath}_drink`, {productRootPath, commonRootPath}) %>
+                        <!-- /飲み方 -->
+
+                        <!-- CTA02 -->
+                        <div class="link_area_wraper js-banner-hidden">
+                          <div class="impression impres01">
+                            <p><img class="js-res_img" src="<%= productRootPath %>img/try_pc.png"
+                                alt="あなたも『アレルナイトプラス』を試してみませんか？" /></p>
+                          </div>
+                        </div>
+
+                        <!-- CTA02 -->
+                        <section id="cta_02" class="cta js-float__close js-banner-hidden">
+                          <%- include(`${productComponentPath}_cta`, {productRootPath, commonRootPath}) %>
+                        </section>
+                        <!-- /CTA02 -->
+
+                          <div class="u-mgb-l"></div>
+
+                          <div class="center_contents js-float__open">
+                            <h3>
+                              <img class="js-res_img u-align-c" src="<%= productRootPath %>img/impression_txt_pc.png"
+                                alt="今までになかった新発想の配合で" />
+                            </h3>
+                            <h4 class="u-mgb-l">
+                              <img class="js-res_img" src="<%= productRootPath %>img/ttl_many_pc.png" alt="実感の声多数！" />
+                            </h4>
+                          </div>
+                          <!-- 顧客満足度・販売実績 -->
+                          <%- include(`${productComponentPath}_authority`, {productRootPath, commonRootPath}) %>
+                            <!-- /顧客満足度・販売実績 -->
+                            <!-- /CTA02 -->
+
+                            <div class="u-mgb-xl pc"></div>
+
+                            <!-- 口コミ　キレイに敏感 -->
+                            <%- include(`${productComponentPath}_kuchikomi`, {productRootPath, commonRootPath}) %>
+                              <!-- /口コミ　キレイに敏感 -->
+
+                              <!-- 製造工場 -->
+                              <%- include(`${productComponentPath}_product`, {productRootPath, commonRootPath}) %>
+                                <!-- /製造工場 -->
+
+                                <!-- CTA03 -->
+                                <section id="cta_03" class="cta js-float__close js-banner-hidden">
+                                  <%- include(`${productComponentPath}_cta`, {productRootPath, commonRootPath}) %>
+                                </section>
+                                <!-- /CTA03 -->
+                                <div class="js-float__open">
+                                  <%- include(`${productComponentPath}_call`, {productRootPath, commonRootPath}) %>
+                                </div>
+                                  <%- include(`${commonComponentPath}_common_oshirase`, {productRootPath,
+                                    commonRootPath}) %>
+                                    <!-- oshirase -->
+
+                                    <%- include(`${productComponentPath}_faq`, {productRootPath, commonRootPath}) %>
+
+                                      <%- include(`${productComponentPath}_guide`, {productRootPath, commonRootPath}) %>
+          </main>
+
+          <%- include(`${commonComponentPath}_common_footer`, {productRootPath, commonRootPath}) %>
+            <%- include(`${productComponentPath}_fixed_banner`, {productRootPath, commonRootPath}) %>
+              <!-- footer -->
+
+      </div>
+
+
+    </body>
+
+  </html>

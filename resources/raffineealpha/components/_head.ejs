@@ -1,0 +1,39 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="ラフィーネ-アルファ,オリエンタルバイオ">
+  <meta name="description" content="10年先の健康を考え始めた方に！「ラフィーネ-アルファ」">
+  <title>10年先の健康を考え始めた方に！「ラフィーネ-アルファ」|「オリエンタルバイオ」</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 共通リソース -->
+  <link rel="stylesheet" href="<%= commonRootPath %>css/common.css" type="text/css" media="all">
+<script src="<%= commonRootPath %>js/jQuery_v3.4.1_min.js" type="text/javascript" charset="utf-8"></script>
+<script src="<%= commonRootPath %>js/common.js"></script>
+  <!-- /共通リソース -->
+
+  <!-- 専用リソース -->
+  <link rel="stylesheet" href="<%= productRootPath %>css/style.css" type="text/css" media="all">
+  <script src="<%= productRootPath %>js/main.js"></script>
+  <!-- /専用リソース -->
+
+  <!-- 共通CSS -->
+  <!--[if lt IE 9]>
+<script src="<%= commonRootPath %>js/vendor/css3-mediaqueries.js"></script>
+<script src="<%= commonRootPath %>js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PH4SDD');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- 他社などのGTMタグを追加で設置する場合は最大1つまで下記の変数で指定できる。複数の場合は要追加改修。 -->
+  <%- typeof anotherGTMTagFile !== 'undefined' ? include(`./${anotherGTMTagFile}`) : null %>
+</head>

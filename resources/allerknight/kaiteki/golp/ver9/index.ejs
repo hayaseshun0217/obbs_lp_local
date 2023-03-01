@@ -1,0 +1,185 @@
+
+<%
+  const commonRootPath = '../../../../common/';
+  const productRootPath = '../../';
+  const commonComponentPath = `${commonRootPath}components/`;
+  const productComponentPath = `${productRootPath}../components/`;
+%>
+<!DOCTYPE html>
+<html>
+<%- include(`${productComponentPath}_head`, {productRootPath, commonRootPath}) %>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4SDD" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="allernight2">
+
+      <!-- header -->
+      <%- include(`${productComponentPath}_header`, {productRootPath, commonRootPath}) %>
+      <!-- /header -->
+
+      <main class="main">
+        <div id="fv" class="sho u-mgb-xl js-banner-hidden">
+          <div class="inner">
+          </div>
+        </div>
+
+      <!-- お知らせ掲載 -->
+      <%- include(`${commonComponentPath}_common_oshirase`, {commonRootPath, productRootPath}) %>
+      <!-- /お知らせ掲載 -->
+
+        <div class="center_contents js-float__open">
+          <div class="js-banner-hidden">
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_01_pc.png">
+              <img src="<%= productRootPath %>img/interview_sho_01_sp.png" alt=""/>
+            </picture>
+            <!-- 01 -->
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_02_pc.png">
+              <img src="<%= productRootPath %>img/interview_sho_02_sp.png" alt=""/>
+            </picture>
+            <!-- 02 -->
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_03_pc.png">
+              <img src="<%= productRootPath %>img/interview_sho_03_sp.png" alt=""/>
+            </picture>
+            <!-- 03 -->
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_04_pc.png">
+              <img src="<%= productRootPath %>img/interview_sho_04_sp.png" alt=""/>
+            </picture>
+            <!-- 04 -->
+            <picture>
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_05_pc.png">
+              <img src="<%= productRootPath %>img/interview_sho_05_sp.png" alt=""/>
+            </picture>
+          <!-- 05 -->
+            <picture id="banner-appear-target01">
+              <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_06_pc.png">
+              <img src="<%= productRootPath %>img/interview_sho_06_sp.png" alt=""/>
+            </picture>
+          </div>
+          <!-- 06 -->
+          <picture>
+            <source media="(min-width: 641px)" srcset="<%= productRootPath %>img/interview_sho_07_pc.png">
+            <img src="<%= productRootPath %>img/interview_sho_07_sp.png" alt=""/>
+          </picture>
+          <!-- 07 -->
+            <img src="<%= productRootPath %>img/interview_sho_08_sp.png" alt="" class="sp"/>
+          <!-- 08 -->
+        </div>
+
+        <!-- <section id="loyal">
+          <div id="linkArea02">
+            <p class="btn">
+              <a href="#linkArea05">
+                <img class="js-res_img" src="<%= productRootPath %>img/btn03_pc.png" alt="実感コースに参加する" />
+              </a>
+            </p>
+            <p class="note01"><span>※対象年齢10歳以上</span><br />顆粒タイプ（2.5g×30本）約１ヶ月分〈グレープフルーツ風味〉</p>
+            <p class="note02">※1 アレルギー特定原材料等28品目不使用</p>
+          </div>
+        </section> -->
+
+        <!-- <section id="nayami">
+          <h2><img class="js-res_img" src="<%= productRootPath %>img/ttl_nayami_pc.png" alt="こんなお悩みありませんか？" /></h2>
+          <div class="inner">
+            <ul>
+              <li><img class="js-res_img" src="<%= productRootPath %>img/nayami01_pc.png" alt="" /></li>
+              <li><img class="js-res_img" src="<%= productRootPath %>img/nayami02_pc.png" alt="" /></li>
+              <li><img class="js-res_img" src="<%= productRootPath %>img/nayami03_pc.png" alt="" /></li>
+            </ul>
+            <p class="support">
+              <img class="js-res_img" src="<%= productRootPath %>img/nayami_txt_pc.png" alt="そのお悩みお手伝いさせてください" />
+            </p>
+
+            <div id="approach">
+              <h4>1,800人の敏感、デリケートな方の声から生まれた</h4>
+              <h3>
+                <img class="js-res_img" src="<%= productRootPath %>img/approach_txt01_pc.png" alt="新しいアプローチのサプリメント" />
+              </h3>
+              <h5><img class="js-res_img" src="<%= productRootPath %>img/approach_txt02_pc.png" alt="アレルナイトプラス" />
+              </h5>
+              <p class="txt">
+                さまざまな刺激や敏感な方のお悩みに<br />独自の複合配合でトータルにケア！
+              </p>
+              <p class="note">
+                ※ ビオチンは、皮膚や粘膜の健康維持を助ける栄養素です。<br />本品は、多量摂取により疾病が治癒したり、より健康が増進するものでは<br />ありません。１日の摂取目安量を守ってください。
+              </p>
+            </div>
+
+            <div class="impression" id="impres01">
+              <h3>
+                <img class="js-res_img" src="<%= productRootPath %>img/impression_txt_pc.png" alt="今までになかった新発想の配合で" />
+              </h3>
+              <h4><img class="js-res_img" src="<%= productRootPath %>img/ttl_many_pc.png" alt="実感の声多数！" /></h4>
+              <div class="crown">
+                <p><img class="js-res_img" src="<%= productRootPath %>img/crown_pc.png" alt="顧客満足度88.5％" /></p>
+              </div>
+              <div class="algy">
+                <span>アレルギー特定原材料不使用</span>
+              </div>
+              <div class="note">
+                ※1 弊社初の商品設計　※2 モニターアンケートによる 「大変満足」33%、「やや満足」38%、「満足」17.5%の合計値 ※3 2016年11月　自社調べ
+                ※4えび、かに、小麦、そば、卵、乳、落花生、あわび、いか、いくら、オレンジ、カシューナッツ、キウイフルーツ、牛肉、くるみ、ごま、さけ、さば、大豆、鶏肉、
+                バナナ、豚肉、まつたけ、もも、やまいも、りんご、ゼラチン
+              </div>
+              <p><img class="js-res_img" src="<%= productRootPath %>img/try_pc.png" alt="あなたも『アレルナイトプラス』を試してみませんか？" />
+              </p>
+
+              <div id="linkArea03">
+                <p class="btn">
+                  <a href="#linkArea05"><img class="js-res_img" src="<%= productRootPath %>img/btn03_pc.png"
+                      alt="実感コースに参加する" /></a>
+                </p>
+                <p class="note01"><span>※対象年齢10歳以上</span><br />顆粒タイプ（2.5g×30本）約１ヶ月分〈グレープフルーツ風味〉</p>
+                <p class="note02">※1 アレルギー特定原材料27品目不使用</p>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <%- include(`${productComponentPath}_nayami`, {productRootPath, commonRootPath}) %>
+        <%- include(`${productComponentPath}_change`, {productRootPath, commonRootPath}) %>
+        <%- include(`${productComponentPath}_drink`, {productRootPath, commonRootPath}) %>
+
+        <!-- CTA01 -->
+        <section id="cta_01" class="cta js-float__close js-banner-hidden">
+          <%- include(`${productComponentPath}_cta`, {productRootPath, commonRootPath}) %>
+        </section>
+        <!-- /CTA01 -->
+
+        <%- include(`${productComponentPath}_component`, {productRootPath, commonRootPath}) %>
+
+        <%- include(`${productComponentPath}_review`, {productRootPath, commonRootPath}) %>
+
+        <%- include(`${productComponentPath}_pleasure`, {productRootPath, commonRootPath}) %>
+
+        <!-- CTA02 -->
+        <section id="cta_02" class="cta js-float__close js-banner-hidden">
+          <%- include(`${productComponentPath}_cta`, {productRootPath, commonRootPath}) %>
+        </section>
+        <!-- /CTA02 -->
+
+      <div class="js-float__open">
+        <%- include(`${productComponentPath}_call`, {productRootPath, commonRootPath}) %>
+      </div>
+
+
+       <%- include(`${productComponentPath}_faq`, {productRootPath, commonRootPath}) %>
+
+        <%- include(`${productComponentPath}_guide`, {productRootPath, commonRootPath}) %>
+      </main>
+
+    <%- include(`${commonComponentPath}_common_footer`, {productRootPath, commonRootPath}) %>
+    <%- include(`${productComponentPath}_fixed_banner`, {productRootPath, commonRootPath}) %>
+    <!-- footer -->
+
+    </div>
+
+
+  </body>
+</html>

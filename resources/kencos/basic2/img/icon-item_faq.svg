@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #bdbdbd;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #06345f;
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        fill: #003c74;
+        filter: url(#filter-2);
+      }
+
+      .cls-4 {
+        fill: #00673a;
+        filter: url(#filter-3);
+      }
+
+      .cls-5 {
+        fill: #055532;
+        filter: url(#filter-4);
+      }
+    </style>
+    <filter id="filter" x="765.781" y="339.469" width="17.25" height="15.625" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#bebebe"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#040000" flood-opacity="0.5"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="0.5" dy="0.866"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="overlay" in2="blend"/>
+    </filter>
+    <filter id="filter-2" x="793.938" y="339.094" width="16.531" height="18.062" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#bebebe"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#040000" flood-opacity="0.5"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="0.5" dy="0.866"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="overlay" in2="blend"/>
+    </filter>
+    <filter id="filter-3" x="774.25" y="365.156" width="6.531" height="18.844" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#bebebe"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#040000" flood-opacity="0.5"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="0.5" dy="0.866"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="overlay" in2="blend"/>
+    </filter>
+    <filter id="filter-4" x="797.406" y="367.094" width="10.719" height="15.5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#bebebe"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#040000" flood-opacity="0.5"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="0.5" dy="0.866"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="overlay" in2="blend"/>
+    </filter>
+  </defs>
+  <g id="icon-faq">
+    <g id="icon-">
+      <path id="シェイプ_1" data-name="シェイプ 1" class="cls-1" d="M776.418,334.175a4.7,4.7,0,0,0-3.854-1.263A4.646,4.646,0,0,0,770,334.1a4.676,4.676,0,0,0-5.82,2.664,4.593,4.593,0,0,0-3.959,4.514,4.5,4.5,0,0,0,.193,1.3,4.525,4.525,0,0,0-.729,7.527,4.468,4.468,0,0,0-.482,2.015,4.592,4.592,0,0,0,3.762,4.483,4.634,4.634,0,0,0,5.236,4.114c0.12-.015.238-0.036,0.355-0.059a4.693,4.693,0,0,0,6.351.534,4.75,4.75,0,0,0,2.37.31,4.663,4.663,0,0,0,3.593-2.562c0.083,0,.165,0,0.25-0.015a4.529,4.529,0,0,0,4.045-4.565,4.569,4.569,0,0,0,2.263-3.349,4.5,4.5,0,0,0-.46-2.647,4.433,4.433,0,0,0,.735-1.921,4.526,4.526,0,0,0-1.876-4.281c0-.01,0-0.02,0-0.029a4.579,4.579,0,0,0-3.768-5.081,4.664,4.664,0,0,0-4.994-3.009A4.762,4.762,0,0,0,776.418,334.175Z" transform="translate(-754 -325)"/>
+      <path id="シェイプ_1_のコピー" data-name="シェイプ 1 のコピー" class="cls-1" d="M807.4,332.571a5.631,5.631,0,0,0-4.625-1.517,5.555,5.555,0,0,0-3.072,1.426,5.67,5.67,0,0,0-1.786-.292,5.58,5.58,0,0,0-5.2,3.488,5.513,5.513,0,0,0-4.751,5.417,5.412,5.412,0,0,0,.232,1.56,5.428,5.428,0,0,0-.875,9.031,5.366,5.366,0,0,0-.578,2.419,5.513,5.513,0,0,0,4.514,5.381,5.563,5.563,0,0,0,6.283,4.937c0.144-.02.286-0.045,0.427-0.073a5.631,5.631,0,0,0,7.62.64,5.71,5.71,0,0,0,2.844.373,5.59,5.59,0,0,0,4.312-3.072c0.1-.008.2-0.008,0.3-0.02a5.548,5.548,0,0,0,4.813-4.726,5.626,5.626,0,0,0,.042-0.751,5.492,5.492,0,0,0,2.716-4.018,5.4,5.4,0,0,0-.553-3.178,5.324,5.324,0,0,0,.882-2.306,5.43,5.43,0,0,0-2.251-5.136c0-.013,0-0.023.006-0.035a5.494,5.494,0,0,0-4.521-6.1,5.6,5.6,0,0,0-5.994-3.612A5.291,5.291,0,0,0,807.4,332.571Z" transform="translate(-754 -325)"/>
+      <path id="シェイプ_1_のコピー_3" data-name="シェイプ 1 のコピー 3" class="cls-1" d="M774.459,359.768a5.088,5.088,0,0,1,4.163-1.365,5.027,5.027,0,0,1,2.766,1.283,5.117,5.117,0,0,1,1.608-.262,5.026,5.026,0,0,1,4.68,3.137,4.961,4.961,0,0,1,4.277,4.872,4.828,4.828,0,0,1-.21,1.4,4.88,4.88,0,0,1,.789,8.123,4.827,4.827,0,0,1,.52,2.175,4.959,4.959,0,0,1-4.064,4.84,5.007,5.007,0,0,1-5.656,4.44c-0.13-.017-0.258-0.038-0.384-0.065a5.07,5.07,0,0,1-4.393,1.607,5.007,5.007,0,0,1-2.468-1.032,5.115,5.115,0,0,1-2.56.337,5.037,5.037,0,0,1-3.882-2.765c-0.09,0-.179,0-0.27-0.017a4.99,4.99,0,0,1-4.332-4.25,4.851,4.851,0,0,1-.037-0.677,4.932,4.932,0,0,1-2.446-3.612,4.853,4.853,0,0,1,.5-2.859,4.792,4.792,0,0,1-.795-2.074,4.891,4.891,0,0,1,2.027-4.622,0.234,0.234,0,0,1,0-.03,4.943,4.943,0,0,1,4.07-5.484,5.042,5.042,0,0,1,5.4-3.249A5.35,5.35,0,0,1,774.459,359.768Z" transform="translate(-754 -325)"/>
+      <path id="シェイプ_1_のコピー_3-2" data-name="シェイプ 1 のコピー 3" class="cls-1" d="M800.5,360.887a25.956,25.956,0,0,0,7.868-.324,7.216,7.216,0,0,1,8.061,8.839,4.63,4.63,0,0,1,.726,7.628,4.622,4.622,0,0,1-3.266,6.587,4.633,4.633,0,0,1-5.212,4.171c-0.12-.016-0.237-0.036-0.354-0.061a4.62,4.62,0,0,1-4.049,1.508,4.567,4.567,0,0,1-2.273-.968,4.615,4.615,0,0,1-5.937-2.279c-0.083-.007-0.165-0.007-0.248-0.018a4.641,4.641,0,0,1-3.993-3.99,4.925,4.925,0,0,1-.035-0.637,4.621,4.621,0,0,1-1.795-6.076,4.56,4.56,0,0,1-.732-1.947,4.626,4.626,0,0,1,1.868-4.34c0-.01,0-0.019,0-0.029a15.71,15.71,0,0,1,8.724-8.2A4.438,4.438,0,0,1,800.5,360.887Z" transform="translate(-754 -325)"/>
+      <path id="Q" class="cls-2" d="M780.385,350.933a8.173,8.173,0,0,0,.311-5.6c-1.35-4.964-5.52-6.6-9.327-5.6-3.733.986-6.607,4.405-5.232,9.46,1.379,5.073,5.6,6.6,9.332,5.615a8.136,8.136,0,0,0,3.508-1.956l2.842,1.464,1.2-2.045Zm-5.5-2.821-1.162,2.035,2.433,1.261a3.962,3.962,0,0,1-1.429.688c-1.453.384-4.1,0.227-5.191-3.8-1.119-4.113,1.227-5.489,2.569-5.844,1.379-.364,4.077-0.3,5.191,3.8a5.645,5.645,0,0,1,.156,3.183Z" transform="translate(-754 -325)"/>
+      <path id="A" class="cls-3" d="M805.894,353.418l0.581,3.2,3.985,0.54-3.787-17.464-4.308-.583-8.426,15.811,3.985,0.539,1.434-2.925Zm-5.311-3.408,3.425-7.022,1.376,7.672Z" transform="translate(-754 -325)"/>
+      <path id="_" data-name="!" class="cls-4" d="M774.255,383.466l3.984,0.539,0.547-3.925-3.983-.539Zm2.552-18.3-0.755,5.411-0.1,6.942,2.263,0.307,1.824-6.71,0.754-5.411Z" transform="translate(-754 -325)"/>
+      <path id="_2" data-name="?" class="cls-5" d="M803.861,382.582l3.108-.82-0.833-3.062-3.108.82Zm1.768-5.457-0.1-.362c-0.295-1.087.051-1.626,1.1-2.972,1.342-1.733,1.751-2.695,1.406-3.963-0.542-1.993-2.892-3.315-6.166-2.45a6.028,6.028,0,0,0-4.206,3.3,4.454,4.454,0,0,0-.138,2.755l3.439-.908a1.787,1.787,0,0,1,1.5-2.395c0.46-.121,1.877-0.418,2.168.651,0.207,0.761-.376,1.517-1.491,3a3.152,3.152,0,0,0-.766,3.057l0.291,1.069Z" transform="translate(-754 -325)"/>
+    </g>
+  </g>
+</svg>

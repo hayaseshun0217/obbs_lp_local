@@ -1,0 +1,22 @@
+<%#
+  ctaのwrapper要素はincludeする先のファイルに定義する。
+  例) <section id="cta_01" class="cta"></section> で囲むなど
+  idを複数指定しないで済むように。class名は上記の例と同じにする。
+%>
+<div class="cta__inner js-banner-hidden center_contents center_contents--resize">
+  <div class="cta__teiki">
+    <img src="<%= productRootPath %>img/cta_01.jpg" width="750" height="1449" alt="アレルナイトプラスですこやかな毎日へ！" loading="lazy">
+    <a class="cta__button cta__button--teiki" href="<%= frontURL %>cart/set?code=R25&cycle=1&quantity=1">
+      <img class="btn_move" src="<%= productRootPath %>img/cta_teiki_button.png" width="750" height="191" alt="9割の方に選ばれているお得な定期コースのお申し込みはこちら。プロフィギュアスケーターの村上佳菜子さんも愛飲中！" loading="lazy">
+    </a>
+  </div>
+  <div class="cta__tokuten">
+    <img src="<%= productRootPath %>img/cta_02.jpg" width="750" height="994" alt="お得な定期コースの6大特典。送料無料、ずっと約3000円オフ、ポストにお届け可能など。" loading="lazy">
+  </div>
+  <div class="cta__tsujo">
+    <img src="<%= productRootPath %>img/cta_03.jpg" width="750" height="447" alt="単品購入はこちら。" loading="lazy">
+    <a class="cta__button cta__button--tsujo" href="<%= frontURL %>cart/set?code=525&cycle=1&quantity=1">
+      <img src="<%= productRootPath %>img/cta_tsujo_button.png" width="288" height="78" alt="今回のみ単品で購入してみる" loading="lazy">
+    </a>
+  </div>
+</div>

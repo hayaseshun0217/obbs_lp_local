@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /usr/share/nginx/html
+permissions:
+  - object: /usr/share/nginx/html
+    pattern: "**"
+    owner: centos
+    group: centos
+    mode: 644
+    type:
+      - file
